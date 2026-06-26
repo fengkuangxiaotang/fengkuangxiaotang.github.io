@@ -1,0 +1,7 @@
+[     273ms] [WARNING] GSAP target .hero p not found. https://gsap.com @ https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js:9
+[     273ms] [WARNING] GSAP target  not found. https://gsap.com @ https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js:9
+[     292ms] [WARNING] Element not found: .stats-row @ https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js:9
+[     336ms] [WARNING] GSAP target .stat-card not found. https://gsap.com @ https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js:9
+[     337ms] [WARNING] GSAP target  not found. https://gsap.com @ https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js:9
+[     577ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://ipapi.co/json/:0
+[     577ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://visitorcountacademichp-default-rtdb.asia-southeast1.firebasedatabase.app/visitors.json:0

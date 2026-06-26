@@ -1,0 +1,1130 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - img "Jialun Cao" [ref=e4]
+    - heading "Jialun Cao" [level=1] [ref=e5]
+    - paragraph [ref=e6]:
+      - text: Research Assistant Professor @ HKUST
+      - text: → Assistant Professor @ Imperial College London
+    - generic [ref=e7] [cursor=pointer]:
+      - generic [ref=e8]: ☾
+      - generic [ref=e9]: Light
+    - list [ref=e10]:
+      - listitem [ref=e11]:
+        - link "About" [ref=e12] [cursor=pointer]:
+          - /url: "#about"
+      - listitem [ref=e13]:
+        - link "News" [ref=e14] [cursor=pointer]:
+          - /url: "#news"
+      - listitem [ref=e15]:
+        - link "Research Topics" [ref=e16] [cursor=pointer]:
+          - /url: "#pubs"
+      - listitem [ref=e17]:
+        - link "Featured Works" [ref=e18] [cursor=pointer]:
+          - /url: "#featured"
+      - listitem [ref=e19]:
+        - link "Publications" [ref=e20] [cursor=pointer]:
+          - /url: "#publications"
+      - listitem [ref=e21]:
+        - link "Teaching" [ref=e22] [cursor=pointer]:
+          - /url: "#teaching"
+      - listitem [ref=e23]:
+        - link "Awards" [ref=e24] [cursor=pointer]:
+          - /url: "#awards"
+      - listitem [ref=e25]:
+        - link "Experience" [ref=e26] [cursor=pointer]:
+          - /url: "#exp"
+      - listitem [ref=e27]:
+        - link "Service" [ref=e28] [cursor=pointer]:
+          - /url: "#svc"
+      - listitem [ref=e29]:
+        - link "Invited Talks" [ref=e30] [cursor=pointer]:
+          - /url: "#talks"
+    - generic [ref=e31]:
+      - generic [ref=e32]: ✉ jialuncao [at] ust [dot] hk
+      - link "GitHub" [ref=e33] [cursor=pointer]:
+        - /url: https://github.com/ArabelaTso
+      - link "X / Twitter" [ref=e34] [cursor=pointer]:
+        - /url: https://x.com/Jialun__Cao
+      - link "Google Scholar" [ref=e35] [cursor=pointer]:
+        - /url: https://scholar.google.com/citations?user=UsLXSAEAAAAJ&hl=en
+      - link "DBLP" [ref=e36] [cursor=pointer]:
+        - /url: https://dblp.org/pid/224/1601.html
+      - link "ORCID" [ref=e37] [cursor=pointer]:
+        - /url: https://orcid.org/0000-0003-4892-6294
+      - link "ResearchGate" [ref=e38] [cursor=pointer]:
+        - /url: https://www.researchgate.net/profile/Jialun-Cao
+  - generic [ref=e39]:
+    - generic [ref=e41]:
+      - generic [ref=e42]: Research Vision
+      - heading "b<0Z$5ZF7xc8jBgkAsfK<i @NU59znceJPyVUn<beK$3v4CVv0vcXCE#qyW0O" [level=1] [ref=e43]:
+        - generic [ref=e44]: b<0Z$5ZF7xc8jBgkAsfK<i
+        - generic [ref=e45]: "@NU59znceJPyVUn<beK$3v4CVv0vcXCE#qyW0O"
+      - generic [ref=e46]:
+        - generic [ref=e47]: LLM4SE
+        - generic [ref=e48]: LLM4FM
+        - generic [ref=e49]: Code Agents
+        - generic [ref=e50]: Benchmarking
+    - generic [ref=e51]:
+      - paragraph [ref=e52]:
+        - text: I am a
+        - strong [ref=e53]: Research Assistant Professor
+        - text: at the
+        - link "Department of Computer Science and Engineering" [ref=e54] [cursor=pointer]:
+          - /url: https://cse.hkust.edu.hk
+        - text: ","
+        - link "The Hong Kong University of Science and Technology" [ref=e55] [cursor=pointer]:
+          - /url: https://hkust.edu.hk/
+          - strong [ref=e56]: The Hong Kong University of Science and Technology
+        - text: . I will join the
+        - link "Department of Computing" [ref=e57] [cursor=pointer]:
+          - /url: https://www.imperial.ac.uk/computing/
+        - text: ","
+        - link "Imperial College London" [ref=e58] [cursor=pointer]:
+          - /url: https://www.imperial.ac.uk/
+          - strong [ref=e59]: Imperial College London
+        - text: as an
+        - strong [ref=e60]: Assistant Professor
+        - text: in late 2026. I received the PhD degree from the Department of Computer Science and Engineering at The Hong Kong University of Science and Technology (HKUST), under the supervision of
+        - link "Prof. Shing-Chi Cheung" [ref=e61] [cursor=pointer]:
+          - /url: https://www.cse.ust.hk/faculty/scc/
+        - text: in the
+        - link "CASTLE" [ref=e62] [cursor=pointer]:
+          - /url: https://aka.henryhc.net/castle
+        - text: lab.
+      - paragraph [ref=e63]:
+        - text: My research focuses on applying advanced AI techniques to
+        - strong [ref=e64]: automate software implementation, testing, and program verification
+        - text: ", to produce software that is reliable by construction. My research interests lie in the intersection of Software Engineering (SE), Large Language Models (LLMs), with an emphasis on LLM4SE, LLM4FM (formal methods), and LLM Evaluation/Benchmarking. I have 30 publications at top conferences and journals, including ICSE, FSE, ASE, TOSEM, CAV, Usenix Security, AAAI, etc. I serve as a program committee member in top conferences such as ICSE, FSE, ASE, and ISSTA, and am a reviewer for TOSEM, TSE, and EmSE. My doctoral dissertation, \"Towards Automatic Testing and Fault Localization in Natural Language Processing Systems\", was recognized with the 🏆"
+        - strong [ref=e65]: ACM SIGSOFT Outstanding Doctoral Dissertation Award for 2025
+        - text: . Additionally, I was honored with the 🏆
+        - strong [ref=e66]: 2025 Young Scientist Award in Engineering Science
+        - text: (one awardee per year in Hong Kong).
+    - generic [ref=e67]:
+      - generic [ref=e69]:
+        - generic [ref=e70]:
+          - generic [ref=e71]: 🏆
+          - strong [ref=e73]: ACM SIGSOFT Outstanding Dissertation Award 2025
+        - generic:
+          - generic: Only 1-2 recipients worldwide per year
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - generic [ref=e77]: 🏆
+          - strong [ref=e79]: Young Scientist Award in Engineering Science 2025
+        - generic:
+          - generic: Only 1 recipient per year in Hong Kong
+    - generic [ref=e81]:
+      - generic [ref=e82]: ICSE
+      - generic [ref=e83]: •
+      - generic [ref=e84]: FSE
+      - generic [ref=e85]: •
+      - generic [ref=e86]: ASE
+      - generic [ref=e87]: •
+      - generic [ref=e88]: CAV
+      - generic [ref=e89]: •
+      - generic [ref=e90]: ACL
+      - generic [ref=e91]: •
+      - generic [ref=e92]: ICML
+      - generic [ref=e93]: •
+      - generic [ref=e94]: AAAI
+      - generic [ref=e95]: •
+      - generic [ref=e96]: USENIX Security
+      - generic [ref=e97]: •
+      - generic [ref=e98]: TOSEM
+      - generic [ref=e99]: •
+      - generic [ref=e100]: TSE
+      - generic [ref=e101]: •
+      - generic [ref=e102]: ICSE
+      - generic [ref=e103]: •
+      - generic [ref=e104]: FSE
+      - generic [ref=e105]: •
+      - generic [ref=e106]: ASE
+      - generic [ref=e107]: •
+      - generic [ref=e108]: CAV
+      - generic [ref=e109]: •
+      - generic [ref=e110]: ACL
+      - generic [ref=e111]: •
+      - generic [ref=e112]: ICML
+      - generic [ref=e113]: •
+      - generic [ref=e114]: AAAI
+      - generic [ref=e115]: •
+      - generic [ref=e116]: USENIX Security
+      - generic [ref=e117]: •
+      - generic [ref=e118]: TOSEM
+      - generic [ref=e119]: •
+      - generic [ref=e120]: TSE
+      - generic [ref=e121]: •
+    - generic [ref=e123]:
+      - heading "🔥 Open Positions — Imperial College London" [level=3] [ref=e124]
+      - paragraph [ref=e125]:
+        - text: I'm looking for highly self-motivated students who enjoy building agentic systems and solving hard problems.
+        - strong [ref=e126]: Let's do something interesting and impactful!
+      - generic [ref=e127]: "Looking for:"
+      - list [ref=e128]:
+        - listitem [ref=e129]: 2–3 fully funded PhD students
+        - listitem [ref=e130]: Self-funded / visiting PhD students
+        - listitem [ref=e131]: Remote RAs/interns
+      - generic [ref=e132]:
+        - generic [ref=e133]: AI for Software Engineering
+        - generic [ref=e134]: AI for Formal Verification
+        - generic [ref=e135]: Coding & Testing Agents
+      - paragraph [ref=e136]: "📩 Send CV + representative works + research plan to: jialuncao [at] ust [dot] hk"
+    - generic [ref=e137]:
+      - generic [ref=e139]: News
+      - generic [ref=e140]:
+        - generic [ref=e141]: 2026.05.02
+        - generic [ref=e142]:
+          - text: 🎉 Two papers accepted by
+          - strong [ref=e143]: ICML 2026
+          - text: "!"
+          - link "SWE-ABS" [ref=e144] [cursor=pointer]:
+            - /url: https://arxiv.org/abs/2603.00520
+          - text: and
+          - 'link "Position: Code Benchmarks" [ref=e145] [cursor=pointer]':
+            - /url: https://arxiv.org/abs/2501.10711
+          - text: .
+      - generic [ref=e146]:
+        - generic [ref=e147]: "2026.04"
+        - generic [ref=e148]:
+          - text: Joining Imperial College London as
+          - strong [ref=e149]: Assistant Professor
+          - text: in late 2026!
+      - generic [ref=e150]:
+        - generic [ref=e151]: 2026.02.21
+        - generic [ref=e152]:
+          - link "Skills-4-SE" [ref=e153] [cursor=pointer]:
+            - /url: https://github.com/ArabelaTso/Skills-4-SE/
+          - text: released — 180+
+          - strong [ref=e154]: Claude Skills for SE
+          - text: .
+          - link "[Website]" [ref=e155] [cursor=pointer]:
+            - /url: https://arabelatso.github.io/Skills-4-SE/
+      - generic [ref=e156]:
+        - generic [ref=e157]: 2026.01.08
+        - generic [ref=e158]:
+          - text: 🎉
+          - link "Code Translation via Pseudocode" [ref=e159] [cursor=pointer]:
+            - /url: https://arxiv.org/abs/2510.00920
+          - text: accepted by
+          - strong [ref=e160]: TOSEM 2026
+          - text: . Congrats to Songqiang!
+      - generic [ref=e161]:
+        - generic [ref=e162]: 2025.12.17
+        - generic [ref=e163]:
+          - text: 🎉 Paper accepted by
+          - strong [ref=e164]: ICSE 2026
+          - text: . Congrats to Ruiyang!
+      - generic [ref=e165]:
+        - generic [ref=e166]: 2025.12.13
+        - generic [ref=e167]:
+          - text: 🏆 Honored with Young Scientist Award in Engineering Science.
+          - link "[News]" [ref=e168] [cursor=pointer]:
+            - /url: https://cse.hkust.edu.hk/News/HKIS_YoungScientist2025/
+      - generic [ref=e169]:
+        - generic [ref=e170]: 2025.05.15
+        - generic [ref=e171]:
+          - text: 🎉
+          - link "From Informal to Formal" [ref=e172] [cursor=pointer]:
+            - /url: https://arxiv.org/abs/2501.16207
+          - text: and
+          - link "CruxEval-X" [ref=e173] [cursor=pointer]:
+            - /url: https://arxiv.org/pdf/2408.13001
+          - text: accepted by
+          - strong [ref=e174]: ACL 2025 Main
+          - text: "!"
+      - generic [ref=e175]:
+        - generic [ref=e176]: 2025.03.08
+        - generic [ref=e177]:
+          - link "HuggingFace repo" [ref=e178] [cursor=pointer]:
+            - /url: https://huggingface.co/fm-universe
+          - text: reached 1.6k+ downloads.
+          - link "Social media" [ref=e179] [cursor=pointer]:
+            - /url: https://mp.weixin.qq.com/s/oyhICTRo2fJL5MZkDrutXg
+          - text: reached 37k+ reads.
+      - generic [ref=e180]:
+        - generic [ref=e181]: 2025.01.23
+        - generic [ref=e182]:
+          - text: 🏆 Received
+          - link "ACM SIGSOFT Outstanding Dissertation Award" [ref=e183] [cursor=pointer]:
+            - /url: https://www2.sigsoft.org/awards/dissertation/
+          - text: .
+          - link "[News]" [ref=e184] [cursor=pointer]:
+            - /url: https://cse.hkust.edu.hk/News/SIGSOFT2025/
+    - generic [ref=e185]:
+      - generic [ref=e187]: Visiting & Program Experience
+      - generic [ref=e188]:
+        - generic [ref=e189]: "2024.10"
+        - generic [ref=e190]:
+          - text: Honored to visit
+          - link "Prof. Michael Pradel" [ref=e191] [cursor=pointer]:
+            - /url: https://software-lab.org/people/Michael_Pradel.html
+            - strong [ref=e192]: Prof. Michael Pradel
+          - text: at the
+          - strong [ref=e193]: University of Stuttgart
+          - text: .
+      - generic [ref=e194]:
+        - generic [ref=e195]: "2024.03"
+        - generic [ref=e196]:
+          - text: Honored to visit
+          - link "Prof. Pinjia He" [ref=e197] [cursor=pointer]:
+            - /url: https://pinjiahe.github.io/
+            - strong [ref=e198]: Prof. Pinjia He
+          - text: at the
+          - strong [ref=e199]: Chinese University of Hong Kong, Shenzhen
+          - text: .
+    - generic [ref=e200]:
+      - generic [ref=e202]: Research Topics
+      - generic [ref=e203]:
+        - generic [ref=e205]:
+          - generic [ref=e206]:
+            - generic [ref=e207]: "01"
+            - heading "LLM Benchmark" [level=2] [ref=e208]
+          - generic [ref=e209] [cursor=pointer]:
+            - generic [ref=e210]:
+              - button "HumanEval+" [ref=e211]
+              - button "MBPP+" [ref=e212]
+              - button "LiveCodeBench" [ref=e213]
+              - button "SWE-bench" [ref=e214]
+              - button "CruxEval-X" [ref=e215]
+            - generic [ref=e216]:
+              - generic [ref=e217]:
+                - generic [ref=e219]: Claude
+                - generic [ref=e221]: "0"
+              - generic [ref=e222]:
+                - generic [ref=e224]: GPT
+                - generic [ref=e226]: "0"
+              - generic [ref=e227]:
+                - generic [ref=e229]: Gemini
+                - generic [ref=e231]: "0"
+              - generic [ref=e232]:
+                - generic [ref=e234]: Llama
+                - generic [ref=e236]: "0"
+              - generic [ref=e237]:
+                - generic [ref=e239]: DeepSeek
+                - generic [ref=e241]: "0"
+        - generic [ref=e243]:
+          - generic [ref=e244]:
+            - generic [ref=e245]: "02"
+            - heading "LLM for SE" [level=2] [ref=e246]
+          - generic [ref=e248] [cursor=pointer]:
+            - generic [ref=e249]:
+              - generic [ref=e250]: Natural Language
+              - paragraph [ref=e251]: Write a function that takes a list of integers and returns the second largest unique element. Return None if it doesn't exist.
+            - generic [ref=e255]: LLM
+            - generic [ref=e257]:
+              - generic [ref=e258]: Generated Code
+              - generic [ref=e259]: "def second_largest(nums):"
+              - generic [ref=e260]: unique = list(set(nums))
+              - generic [ref=e261]: "if len(unique) < 2:"
+              - generic [ref=e262]: return None
+              - generic [ref=e263]: unique.sort(reverse=True)
+              - generic [ref=e264]: return unique[1]
+        - generic [ref=e266]:
+          - generic [ref=e267]:
+            - generic [ref=e268]: "03"
+            - heading "LLM for Formal Methods" [level=2] [ref=e269]
+          - generic [ref=e271] [cursor=pointer]:
+            - generic [ref=e272]:
+              - generic [ref=e273]: C Code
+              - generic [ref=e274]: "int abs_val(int x) {"
+              - generic [ref=e275]: if (x < 0)
+              - generic [ref=e276]: return -x;
+              - generic [ref=e277]: return x;
+              - generic [ref=e278]: "}"
+            - generic [ref=e282]: LLM
+            - generic [ref=e284]:
+              - generic [ref=e285]: C + ACSL Spec
+              - generic [ref=e286]: /*@ requires x > INT_MIN;
+              - generic [ref=e287]: "@ ensures \\result >= 0;"
+              - generic [ref=e288]: "@ ensures \\result == x"
+              - generic [ref=e289]: "@ || \\result == -x;"
+              - generic [ref=e290]: "@*/"
+              - generic [ref=e291]: "int abs_val(int x) {"
+              - generic [ref=e292]: if (x < 0)
+              - generic [ref=e293]: return -x;
+              - generic [ref=e294]: return x;
+              - generic [ref=e295]: "}"
+        - generic [ref=e297]:
+          - generic [ref=e298]:
+            - generic [ref=e299]: "04"
+            - heading "SE for AI" [level=2] [ref=e300]
+          - generic [ref=e301] [cursor=pointer]:
+            - img [ref=e302]:
+              - generic [ref=e349]: Input
+              - generic [ref=e350]: Hidden 1
+              - generic [ref=e351]: Hidden 2
+              - generic [ref=e352]: Output
+            - generic [ref=e354]: Scanning... 0 bugs found
+      - generic [ref=e355]:
+        - generic [ref=e356]:
+          - generic [ref=e357]: LLM Benchmark7+
+          - generic:
+            - generic [ref=e358]: code generation
+            - generic [ref=e359]: code reasoning
+            - generic [ref=e360]: data contamination
+            - generic [ref=e361]: multilingual
+            - generic [ref=e362]: adversarial
+        - generic [ref=e363]:
+          - generic [ref=e364]: LLM for SE8+
+          - generic:
+            - generic [ref=e365]: code translation
+            - generic [ref=e366]: bug reproduction
+            - generic [ref=e367]: program repair
+            - generic [ref=e368]: embedded
+            - generic [ref=e369]: API docs
+        - generic [ref=e370]:
+          - generic [ref=e371]: LLM for Formal Methods5+
+          - generic:
+            - generic [ref=e372]: theorem proving
+            - generic [ref=e373]: specification
+            - generic [ref=e374]: model checking
+            - generic [ref=e375]: TLA+
+            - generic [ref=e376]: formal proofs
+        - generic [ref=e377]:
+          - generic [ref=e378]: SE for AI8+
+          - generic:
+            - generic [ref=e379]: NLP testing
+            - generic [ref=e380]: DL testing
+            - generic [ref=e381]: fault localization
+            - generic [ref=e382]: metamorphic
+            - generic [ref=e383]: security
+      - generic [ref=e385]: Featured Works
+      - generic [ref=e386]:
+        - generic [ref=e387]:
+          - generic [ref=e388]: ICML '26
+          - generic [ref=e389]:
+            - 'heading "Position: Code Benchmarks Should Prioritize Rigor, Reliability, and Reproducibility" [level=3] [ref=e390]'
+            - generic [ref=e391]: Jialun Cao, Yuk-Kit Chan*, Zixuan Ling*, Wenxuan Wang†, Shuqing Li, Mingwei Liu, Ruixi Qiao, Yuting Han, Chaozheng Wang, Boxi Yu, Pinjia He, Shuai Wang, Zibin Zheng, Michael R. Lyu, Shing-Chi Cheung
+            - generic [ref=e392]:
+              - link "Paper" [ref=e393] [cursor=pointer]:
+                - /url: https://arxiv.org/abs/2501.10711
+              - link "Media" [ref=e394] [cursor=pointer]:
+                - /url: https://mp.weixin.qq.com/s/noYYnJW3PHggxt0Wex-t-Q
+        - generic [ref=e395]:
+          - generic [ref=e396]: ACL '25
+          - generic [ref=e397]:
+            - heading "From Informal to Formal — Incorporating and Evaluating LLMs on Natural Language Requirements to Verifiable Formal Proofs" [level=3] [ref=e398]
+            - generic [ref=e399]: Jialun Cao, Yaojie Lu, Meiziniu Li, Haoyang Ma, Haokun Li, Mengda He, Cheng Wen, Le Sun, Hongyu Zhang, Shengchao Qin, Shing-Chi Cheung, Cong Tian
+            - generic [ref=e400]: 1.6k+ HuggingFace downloads · 37k+ social media reads · 2k+ forwards
+            - generic [ref=e401]:
+              - link "Paper" [ref=e402] [cursor=pointer]:
+                - /url: https://arxiv.org/abs/2501.16207
+              - link "HuggingFace" [ref=e403] [cursor=pointer]:
+                - /url: https://huggingface.co/fm-universe
+              - link "Media" [ref=e404] [cursor=pointer]:
+                - /url: https://mp.weixin.qq.com/s/oyhICTRo2fJL5MZkDrutXg
+        - generic [ref=e405]:
+          - generic [ref=e406]: CAV '24
+          - generic [ref=e407]:
+            - heading "Enchanting Program Specification Synthesis by Large Language Models using Static Analysis and Program Verification" [level=3] [ref=e408]
+            - generic [ref=e409]: Cheng Wen, Jialun Cao (Corresponding), Jie Su, Zhiwu Xu, Shengchao Qin, Mengda He, Haokun Li, Shing-Chi Cheung, Cong Tian
+            - generic [ref=e410]:
+              - link "Paper" [ref=e411] [cursor=pointer]:
+                - /url: https://arxiv.org/pdf/2404.00762
+              - link "Homepage" [ref=e412] [cursor=pointer]:
+                - /url: https://sites.google.com/view/autospecification
+        - generic [ref=e413]:
+          - generic [ref=e414]: ICSE '22
+          - generic [ref=e415]:
+            - 'heading "DeepFD: Automated Fault Diagnosis and Localization for Deep Learning Programs" [level=3] [ref=e416]'
+            - generic [ref=e417]: Jialun Cao, Meiziniu Li, Xiao Chen, Ming Wen, Yongqiang Tian, Bo Wu, Shing-chi Cheung
+            - generic [ref=e418]:
+              - link "Paper" [ref=e419] [cursor=pointer]:
+                - /url: https://dl.acm.org/doi/10.1145/3510003.3510099
+              - link "Code" [ref=e420] [cursor=pointer]:
+                - /url: https://github.com/ArabelaTso/DeepFD
+      - generic [ref=e421]:
+        - generic [ref=e422]: Publications
+        - generic [ref=e423]: 30+
+      - generic [ref=e424]:
+        - generic [ref=e425] [cursor=pointer]:
+          - generic [ref=e426]: "2026"
+          - generic [ref=e427]: 11 papers
+          - generic [ref=e428]:
+            - generic [ref=e429]: ICML
+            - generic [ref=e430]: ICSE
+            - generic [ref=e431]: FSE
+            - generic [ref=e432]: ACL
+            - generic [ref=e433]: FM
+            - generic [ref=e434]: TOSEM
+          - generic [ref=e435]: ▶
+        - generic [ref=e437]:
+          - generic [ref=e438]:
+            - text: "[C26] Ruiyang Xu, Jialun Cao (Co-1st), Mingyuan Wu, Wenliang Zhong, Yaojie Lu, Ben He, Xianpei Han, Shing-Chi Cheung, Le Sun."
+            - emphasis [ref=e439]: "EmbedAgent: Benchmarking Large Language Models in Embedded System Development."
+            - text: In
+            - strong [ref=e440]: ICSE 2026
+            - text: .
+            - link "[Paper]" [ref=e441] [cursor=pointer]:
+              - /url: https://www.arxiv.org/abs/2506.11003
+          - generic [ref=e442]:
+            - text: "[J5] Songqiang Chen, Congying Xu, Jingyi Chen, Jialun Cao (Corresponding), Jiarong Wu, Shing-Chi Cheung."
+            - emphasis [ref=e443]: Can Emulating Semantic Translation Help LLMs with Code Translation? A Study Based on Pseudocode.
+            - text: In
+            - strong [ref=e444]: TOSEM 2026
+            - text: .
+            - link "[Paper]" [ref=e445] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2510.00920
+          - generic [ref=e446]:
+            - text: "[C27] Qiming Zhu, Jialun Cao, Xuanang Chen, Yaojie Lu, Hongyu Lin, Xianpei Han, Le Sun, Shing-Chi Cheung."
+            - emphasis [ref=e447]: "Across Programming Language Silos: A Study on Cross-Lingual Retrieval-augmented Code Generation."
+            - text: In
+            - strong [ref=e448]: ACL findings 2026
+            - text: .
+            - link "[Paper]" [ref=e449] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2506.03535
+          - generic [ref=e450]:
+            - text: "[C28] Zhiyong Chen, Jialun Cao, Chang Xu, Shing-Chi Cheung."
+            - emphasis [ref=e451]: "ModelWisdom: An Integrated Toolkit for TLA+ Model Visualization, Digest and Repair."
+            - text: In
+            - strong [ref=e452]: FM 2026
+            - text: Tool track.
+            - link "[Paper]" [ref=e453] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2602.12058
+            - link "[Website]" [ref=e454] [cursor=pointer]:
+              - /url: https://modelwisdom-staging.pacificstudio.ai/
+          - generic [ref=e455]:
+            - text: "[C29] Junyi Wang, Jialun Cao, Zhongxin Liu."
+            - emphasis [ref=e456]: "iCoRe: Iterative Correlation-Aware Retriever for Bug Reproduction."
+            - strong [ref=e457]: FSE 2026
+            - text: .
+            - link "[Paper]" [ref=e458] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2604.19224
+          - generic [ref=e459]:
+            - text: "[C30] Jialun Cao, Yuk-Kit Chan*, Zixuan Ling*, Wenxuan Wang†, Shuqing Li, Mingwei Liu, Ruixi Qiao, Yuting Han, Chaozheng Wang, Boxi Yu, Pinjia He, Shuai Wang, Zibin Zheng, Michael R. Lyu, Shing-Chi Cheung."
+            - emphasis [ref=e460]: "Position: Code Benchmarks Should Prioritize Rigor, Reliability, and Reproducibility."
+            - strong [ref=e461]: ICML Position 2026
+            - text: .
+            - link "[Paper]" [ref=e462] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2501.10711
+          - generic [ref=e463]:
+            - text: "[C31] Boxi Yu, Yang Cao, Yuzhong Zhang, Liting Lin, Junjielong Xu, Zhiqing Zhong, Qinghua Xu, Guancheng Wang, Jialun Cao, Shing-Chi Cheung, Pinjia He, Lionel Briand."
+            - emphasis [ref=e464]: "SWE-ABS: Adversarial Benchmark Strengthening Exposes Inflated Success Rates on Test-based Benchmark."
+            - strong [ref=e465]: ICML 2026
+            - text: .
+            - link "[Paper]" [ref=e466] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2603.00520
+          - generic [ref=e467]:
+            - text: "[J6] Jingyi Chen, Songqiang Chen, Jialun Cao (Corresponding), Jiasi Shen, Shing-Chi Cheung."
+            - emphasis [ref=e468]: "When Retrieval Augmentation Meets API Documentation: Can LLMs Code with Less-Common Libraries?"
+            - strong [ref=e469]: TOSEM 2026
+            - text: .
+            - link "[Paper]" [ref=e470] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2503.15231
+          - generic [ref=e471]:
+            - text: "[Pre8] Zhiyong Chen, Jialun Cao, Jiarong Wu, Chang Xu, Shing-Chi Cheung."
+            - emphasis [ref=e472]: Can Large Language Models Model Programs Formally?
+            - text: arXiv.
+            - link "[Paper]" [ref=e473] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2604.01851
+          - generic [ref=e474]:
+            - text: "[Pre9] Dong Xu, Jialun Cao, Guozhao Mo, Junjie Hu, Cheng Wen, Hongyu Lin, Xianpei Han, Shengchao Qin, Cong Tian, Shing-Chi Cheung, Le Sun, Yaojie Lu."
+            - emphasis [ref=e475]: "LiveFMBench: Unveiling the Power and Limits of Agentic Workflows in Specification Generation."
+            - text: arXiv.
+            - link "[Paper]" [ref=e476] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2605.01394v1
+            - link "[HF]" [ref=e477] [cursor=pointer]:
+              - /url: https://huggingface.co/datasets/fm-universe/Live-FM-Bench
+          - generic [ref=e478]:
+            - text: "[Pre10] Yuanyi Wang, Yifan Yang, Su Lu, Yanggan Gu, Pengkai Wang, Wenjun Wang, Zhaoyi Yan, Congkai Xie, Jianmin Wu, Jialun Cao, Shing-Chi Cheung, Hongxia Yang."
+            - emphasis [ref=e479]: "Geometry Conflict: Explaining and Controlling Forgetting in LLM Continual Post-Training."
+            - text: arXiv.
+            - link "[Paper]" [ref=e480] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2605.09608v1
+      - generic [ref=e481]:
+        - generic [ref=e482] [cursor=pointer]:
+          - generic [ref=e483]: "2025"
+          - generic [ref=e484]: 16 papers
+          - generic [ref=e485]:
+            - generic [ref=e486]: ACL
+            - generic [ref=e487]: FSE
+            - generic [ref=e488]: AAAI
+            - generic [ref=e489]: ASE
+            - generic [ref=e490]: TOSEM
+          - generic [ref=e491]: ▶
+        - generic [ref=e492]:
+          - generic [ref=e493]:
+            - text: "[C19] Jialun Cao, Songqiang Chen, Wuqi Zhang, Hau Ching Lo, Yeting Li, Shing-Chi Cheung."
+            - emphasis [ref=e494]: "CodeCleaner: Elevating Standards with A Robust Data Contamination Mitigation Toolkit."
+            - strong [ref=e495]: Internetware 2025
+            - text: .
+            - link "[Paper]" [ref=e496] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2411.10842
+            - link "[Code]" [ref=e497] [cursor=pointer]:
+              - /url: https://github.com/ArabelaTso/CodeCleaner-v1
+          - generic [ref=e498]:
+            - text: "[J3] Jialun Cao, Meiziniu Li, Ming Wen, Shing-chi Cheung."
+            - emphasis [ref=e499]: A study on prompt design, advantages and limitations of chatgpt for deep learning program repair.
+            - strong [ref=e500]: ASEJ
+            - text: .
+            - link "[arxiv]" [ref=e501] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2304.08191
+            - link "[Official]" [ref=e502] [cursor=pointer]:
+              - /url: https://link.springer.com/article/10.1007/s10515-025-00492-x
+          - generic [ref=e503]:
+            - text: "[C20] Jialun Cao, Yaojie Lu, Meiziniu Li, Haoyang Ma, Haokun Li, Mengda He, Cheng Wen, Le Sun, Hongyu Zhang, Shengchao Qin, Shing-Chi Cheung, Cong Tian."
+            - emphasis [ref=e504]: From Informal to Formal — Incorporating and Evaluating LLMs on Natural Language Requirements to Verifiable Formal Proofs.
+            - strong [ref=e505]: ACL Main 2025
+            - text: .
+            - link "[Paper]" [ref=e506] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2501.16207
+            - link "[HF]" [ref=e507] [cursor=pointer]:
+              - /url: https://huggingface.co/fm-universe
+            - link "[Media]" [ref=e508] [cursor=pointer]:
+              - /url: https://mp.weixin.qq.com/s/oyhICTRo2fJL5MZkDrutXg
+          - generic [ref=e509]:
+            - text: "[C21] Xiao Chen, Hengcheng Zhu, Jialun Cao (Corresponding), Ming Wen, Shing-Chi Cheung."
+            - emphasis [ref=e510]: "SemBIC: Semantic-aware Identification of Bug-inducing Commits."
+            - strong [ref=e511]: FSE 2025
+            - text: .
+            - link "[Paper]" [ref=e512] [cursor=pointer]:
+              - /url: https://scholar.henryhc.net/files/publications/2025/FSE2025-SemBIC.pdf
+          - generic [ref=e513]:
+            - text: "[C22] Qiming Zhu, Jialun Cao (Co-1st), Yaojie Lu, Hongyu Lin, Xianpei Han, Ben He, Le Sun, Shing-Chi Cheung."
+            - emphasis [ref=e514]: "DomainEval: An Auto-Constructed Benchmark for Multi-Domain Code Generation."
+            - strong [ref=e515]: AAAI 2025
+            - text: .
+            - link "[Paper]" [ref=e516] [cursor=pointer]:
+              - /url: https://arxiv.org/pdf/2408.13204
+            - link "[Leaderboard]" [ref=e517] [cursor=pointer]:
+              - /url: https://domaineval.github.io/leaderboard.html
+            - link "[Code]" [ref=e518] [cursor=pointer]:
+              - /url: https://github.com/domaineval/DomainEval
+          - generic [ref=e519]:
+            - text: "[C23] Ruiyang Xu, Jialun Cao (Co-1st), Yaojie Lu, Ming Wen, Hongyu Lin, Xianpei Han, Ben He, Shing-Chi Cheung, Le Sun."
+            - emphasis [ref=e520]: "CruxEval-X: A Benchmark for Multilingual Code Reasoning, Understanding and Execution."
+            - strong [ref=e521]: ACL Main 2025
+            - text: .
+            - link "[Paper]" [ref=e522] [cursor=pointer]:
+              - /url: https://arxiv.org/pdf/2408.13001
+            - link "[Leaderboard]" [ref=e523] [cursor=pointer]:
+              - /url: https://cruxeval-x.github.io/leaderboard.html
+            - link "[Code]" [ref=e524] [cursor=pointer]:
+              - /url: https://github.com/CRUXEVAL-X/cruxeval-x
+          - generic [ref=e525]:
+            - text: "[C24] Mengyang Wu, Yuzhi Zhao, Jialun Cao, Mingjie Xu, Zhongming Jiang, Xuehui Wang, Qinbin Li, Guangneng Hu, Shengchao Qin, Chi-Wing Fu."
+            - emphasis [ref=e526]: "ICM-Assistant: Instruction-tuning Multimodal Large Language Models for Rule-based Explainable Image Content Moderation."
+            - strong [ref=e527]: AAAI 2025
+            - text: .
+            - link "[Paper]" [ref=e528] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2412.18216
+          - generic [ref=e529]:
+            - text: "[C25] Xingchu Chen, Chengwei Liu, Jialun Cao, Yang Xiao, Xinyue Cai, Yeting Li, Jingyi Shi, Tianqi Sun, Haiming Chen, Wei Huo."
+            - emphasis [ref=e530]: "Vulnerability-Affected Versions Identification: How Far Are We?"
+            - strong [ref=e531]: ASE 2025
+            - text: .
+          - generic [ref=e532]:
+            - text: "[J4] Meiziniu Li, Dongze Li, Jianmeng Liu, Jialun Cao, Yongqiang Tian, Shing-Chi Cheung."
+            - emphasis [ref=e533]: Enhancing Differential Testing With LLMs For Testing Deep Learning Libraries.
+            - strong [ref=e534]: TOSEM 2025
+            - text: .
+            - link "[Paper]" [ref=e535] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2406.07944
+          - generic [ref=e536]:
+            - text: "[Pre1] Jialun Cao, Yuk-Kit Chan*, Zixuan Ling*, Wenxuan Wang†, Shuqing Li, Mingwei Liu, Ruixi Qiao, Yuting Han, Chaozheng Wang, Boxi Yu, Pinjia He, Shuai Wang, Zibin Zheng, Michael R. Lyu, Shing-Chi Cheung."
+            - emphasis [ref=e537]: How Should We Build A Benchmark? Revisiting 274 Code-Related Benchmarks For LLMs.
+            - text: arXiv.
+            - link "[Paper]" [ref=e538] [cursor=pointer]:
+              - /url: https://arxiv.org/pdf/2501.10711
+          - generic [ref=e539]:
+            - text: "[Pre2] Jialun Cao, Wuqi Zhang, Shing-Chi Cheung."
+            - emphasis [ref=e540]: Concerned with Data Contamination? Assessing Countermeasures in Code Language Model.
+            - text: arXiv.
+            - link "[Paper]" [ref=e541] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2403.16898
+          - generic [ref=e542]:
+            - text: "[Pre3] Jiarong Wu, Songqiang Chen, Jialun Cao (Corresponding), Hau Ching Lo, Shing-Chi Cheung."
+            - emphasis [ref=e543]: "Isolating Language-Coding from Problem-Solving: Benchmarking LLMs with PseudoEval."
+            - text: arXiv.
+            - link "[Paper]" [ref=e544] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2502.19149
+          - generic [ref=e545]:
+            - text: "[Pre4] Dekun Dai, MingWei Liu, Anji Li, Jialun Cao, Yanlin Wang, Chong Wang, Xin Peng, Zibin Zheng."
+            - emphasis [ref=e546]: "FeedbackEval: A Benchmark for Evaluating Large Language Models in Feedback-Driven Code Repair Tasks."
+            - text: arXiv.
+            - link "[Paper]" [ref=e547] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2504.06939
+          - generic [ref=e548]:
+            - text: "[Pre5] Xiaolei Li, Jialun Cao, Yepang Liu, Shing-Chi Cheung, Hailong Wang."
+            - emphasis [ref=e549]: "ReuseDroid: A VLM-empowered Android UI Test Migrator Boosted by Active Feedback."
+            - text: arXiv.
+            - link "[Paper]" [ref=e550] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2504.02357
+          - generic [ref=e551]:
+            - text: "[Pre6] Le Deng, Zhonghao Jiang, Jialun Cao, Michael Pradel, Zhongxin Liu."
+            - emphasis [ref=e552]: "NoCode-bench: A Benchmark for NL-Driven Feature Addition."
+            - text: arXiv.
+            - link "[Paper]" [ref=e553] [cursor=pointer]:
+              - /url: https://www.arxiv.org/abs/2507.18130
+            - link "[Leaderboard]" [ref=e554] [cursor=pointer]:
+              - /url: https://nocodebench.org/
+            - link "[HF]" [ref=e555] [cursor=pointer]:
+              - /url: https://huggingface.co/NoCode-bench
+          - generic [ref=e556]:
+            - text: "[Pre7] Dongze Li, Songqiang Chen, Jialun Cao (Corresponding), Shing-Chi Cheung."
+            - emphasis [ref=e557]: What Builds Effective In-Context Examples for Code Generation?
+            - text: arXiv.
+            - link "[Paper]" [ref=e558] [cursor=pointer]:
+              - /url: https://www.arxiv.org/abs/2508.06414
+      - generic [ref=e559]:
+        - generic [ref=e560] [cursor=pointer]:
+          - generic [ref=e561]: "2024"
+          - generic [ref=e562]: 6 papers
+          - generic [ref=e563]:
+            - generic [ref=e564]: ASE
+            - generic [ref=e565]: CAV
+            - generic [ref=e566]: APSEC
+            - generic [ref=e567]: TASE
+          - generic [ref=e568]: ▶
+        - generic [ref=e569]:
+          - generic [ref=e570]:
+            - text: "[C13] Jialun Cao, Zhiyong Chen*, Jiarong Wu, Shing-chi Cheung, Chang Xu."
+            - emphasis [ref=e571]: "JavaBench: A Benchmark of Object-Oriented Code Generation for Evaluating Large Language Models."
+            - strong [ref=e572]: ASE 2024
+            - text: .
+            - link "[Paper]" [ref=e573] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2406.12902
+            - link "[Leaderboard]" [ref=e574] [cursor=pointer]:
+              - /url: https://java-bench.github.io/leaderboard.html
+            - link "[Code]" [ref=e575] [cursor=pointer]:
+              - /url: https://github.com/java-bench/JavaBench
+          - generic [ref=e576]:
+            - text: 🏆 [C14]
+            - strong [ref=e577]: Distinguished paper award
+            - text: . Zongze Jiang, Ming Wen, Jialun Cao, Xuanhua Shi, Hai Jin.
+            - emphasis [ref=e578]: Towards Understanding the Effectiveness of Large Language Models on Directed Test Input Generation.
+            - strong [ref=e579]: ASE 2024
+            - text: .
+            - link "[Paper]" [ref=e580] [cursor=pointer]:
+              - /url: https://github.com/CGCL-codes/PathEval/blob/main/PathEval_Preprint.pdf
+            - link "[Code]" [ref=e581] [cursor=pointer]:
+              - /url: https://github.com/CGCL-codes/PathEval
+          - generic [ref=e582]:
+            - text: "[C15] Congying Xu, Songqiang Chen, Jiarong Wu, Valerio Terragni, Shing-chi Cheung, Hengcheng Zhu, Jialun Cao (Corresponding)."
+            - emphasis [ref=e583]: "MR-Adopt: Automatic Deduction of Input Transformation Function for Metamorphic Testing."
+            - strong [ref=e584]: ASE 2024
+            - text: .
+            - link "[Paper]" [ref=e585] [cursor=pointer]:
+              - /url: https://arxiv.org/pdf/2408.15815
+          - generic [ref=e586]:
+            - text: "[C16] Cheng Wen, Jialun Cao (Corresponding), Jie Su, Zhiwu Xu, Shengchao Qin, Mengda He, Haokun Li, Shing-Chi Cheung, Cong Tian."
+            - emphasis [ref=e587]: Enchanting Program Specification Synthesis by Large Language Models using Static Analysis and Program Verification.
+            - strong [ref=e588]: CAV 2024
+            - text: .
+            - link "[Paper]" [ref=e589] [cursor=pointer]:
+              - /url: https://arxiv.org/pdf/2404.00762
+            - link "[Homepage]" [ref=e590] [cursor=pointer]:
+              - /url: https://sites.google.com/view/autospecification
+          - generic [ref=e591]:
+            - text: "[C17] Bo Yang, Jiawei Hu, Jialun Cao (Corresponding)."
+            - emphasis [ref=e592]: "SDEFL: A Lightweight Fault Detection and Localization Method for Deep Neural Networks."
+            - strong [ref=e593]: APSEC 2024
+            - text: .
+          - generic [ref=e594]:
+            - text: "[C18] Kunpeng Jian, Yanyan Zou, Yeting Li, Jialun Cao, Menghao Li, Jian Sun, Jingyi Shi, Wei Huo."
+            - emphasis [ref=e595]: "Fuzzing for Stateful Protocol Implementations: Are We There Yet?"
+            - strong [ref=e596]: TASE 2024
+            - text: .
+      - generic [ref=e597]:
+        - generic [ref=e598] [cursor=pointer]:
+          - generic [ref=e599]: "2023"
+          - generic [ref=e600]: 3 papers
+          - generic [ref=e601]:
+            - generic [ref=e602]: FSE
+            - generic [ref=e603]: TOSEM
+          - generic [ref=e604]: ▶
+        - generic [ref=e605]:
+          - generic [ref=e606]:
+            - text: "[C11] Jialun Cao, Yaojie Lu, Ming Wen, Shing-Chi Cheung."
+            - emphasis [ref=e607]: Testing Coreference Resolution Systems without Labeled Test Sets.
+            - strong [ref=e608]: ESEC/FSE 2023
+            - text: .
+            - link "[Paper]" [ref=e609] [cursor=pointer]:
+              - /url: https://dl.acm.org/doi/pdf/10.1145/3611643.3616258
+            - link "[Code]" [ref=e610] [cursor=pointer]:
+              - /url: https://github.com/ArabelaTso/Crest-artifacts
+          - generic [ref=e611]:
+            - text: "[C12] Xiaohu Du, Xiao Chen, Jialun Cao, Ming Wen, Shing-Chi Cheung, Hai Jin."
+            - emphasis [ref=e612]: Understanding the Bug Characteristics and Fix Strategies of Federated Learning Systems.
+            - strong [ref=e613]: ESEC/FSE 2023
+            - text: .
+            - link "[Paper]" [ref=e614] [cursor=pointer]:
+              - /url: https://dl.acm.org/doi/pdf/10.1145/3611643.3616347
+          - generic [ref=e615]:
+            - text: "[J2] Meiziniu Li, Jialun Cao, Yongqiang Tian, Tsz On Li, Ming Wen, Shing-Chi Cheung."
+            - emphasis [ref=e616]: "COMET: Coverage-guided Model Generation For Deep Learning Library Testing."
+            - strong [ref=e617]: TOSEM
+            - text: .
+            - link "[Paper]" [ref=e618] [cursor=pointer]:
+              - /url: https://dl.acm.org/doi/10.1145/3583566
+            - link "[Code]" [ref=e619] [cursor=pointer]:
+              - /url: https://github.com/maybeLee/COMET
+      - generic [ref=e620]:
+        - generic [ref=e621] [cursor=pointer]:
+          - generic [ref=e622]: "2022"
+          - generic [ref=e623]: 3 papers
+          - generic [ref=e624]:
+            - generic [ref=e625]: ICSE
+            - generic [ref=e626]: USENIX Sec
+            - generic [ref=e627]: TOSEM
+          - generic [ref=e628]: ▶
+        - generic [ref=e629]:
+          - generic [ref=e630]:
+            - text: "[J1] Jialun Cao, Meiziniu Li, Yeting Li, Ming Wen, Shing-chi Cheung."
+            - emphasis [ref=e631]: "SemMT: A Semantic-Based Testing Approach for Machine Translation Systems."
+            - strong [ref=e632]: TOSEM
+            - text: .
+            - link "[Paper]" [ref=e633] [cursor=pointer]:
+              - /url: https://dl.acm.org/doi/10.1145/3490488
+            - link "[Code]" [ref=e634] [cursor=pointer]:
+              - /url: https://github.com/ArabelaTso/SemMT
+          - generic [ref=e635]:
+            - text: "[C9] Jialun Cao, Meiziniu Li, Xiao Chen, Ming Wen, Yongqiang Tian, Bo Wu, Shing-chi Cheung."
+            - emphasis [ref=e636]: "DeepFD: Automated Fault Diagnosis and Localization for Deep Learning Programs."
+            - strong [ref=e637]: ICSE 2022
+            - text: .
+            - link "[Paper]" [ref=e638] [cursor=pointer]:
+              - /url: https://dl.acm.org/doi/10.1145/3510003.3510099
+            - link "[Code]" [ref=e639] [cursor=pointer]:
+              - /url: https://github.com/ArabelaTso/DeepFD
+          - generic [ref=e640]:
+            - text: "[C10] Yeting Li, Yecheng Sun, Zhiwu Xu, Jialun Cao, Yuekang Li, Rongchen Li, Haiming Chen, Shing-Chi Cheung, Yang Liu, Yang Xiao."
+            - emphasis [ref=e641]: "RegexScalpel: Regular Expression Denial of Service (ReDoS) Defense by Localize-and-Fix."
+            - strong [ref=e642]: USENIX Security 2022
+            - text: .
+            - link "[Paper]" [ref=e643] [cursor=pointer]:
+              - /url: https://www.usenix.org/conference/usenixsecurity22/presentation/li-yeting
+      - generic [ref=e644]:
+        - generic [ref=e645] [cursor=pointer]:
+          - generic [ref=e646]: "2021"
+          - generic [ref=e647]: 2 papers
+          - generic [ref=e648]:
+            - generic [ref=e649]: ICSE
+            - generic [ref=e650]: USENIX Sec
+          - generic [ref=e651]: ▶
+        - generic [ref=e652]:
+          - generic [ref=e653]:
+            - text: "[C7] Yeting Li, Zixuan Chen, Jialun Cao, Zhiwu Xu, Qiancheng Peng, Haiming Chen, Liyuan Chen, Shing-Chi Cheung."
+            - emphasis [ref=e654]: "ReDoSHunter: A Combined Static and Dynamic Approach for Regular Expression DoS Detection."
+            - strong [ref=e655]: USENIX Security 2021
+            - text: .
+            - link "[Paper]" [ref=e656] [cursor=pointer]:
+              - /url: https://www.usenix.org/conference/usenixsecurity21/presentation/li-yeting
+          - generic [ref=e657]:
+            - text: "[C8] Yeting Li, Shuaimin Li, Zhiwu Xu, Jialun Cao, Zixuan Chen, Yun Hu, Haiming Chen, Shing-Chi Cheung."
+            - emphasis [ref=e658]: "TransRegex: Multi-modal Regular Expression Synthesis by Generate-and-Repair."
+            - strong [ref=e659]: ICSE 2021
+            - text: .
+            - link "[Paper]" [ref=e660] [cursor=pointer]:
+              - /url: https://ieeexplore.ieee.org/document/9401951
+      - generic [ref=e661]:
+        - generic [ref=e662] [cursor=pointer]:
+          - generic [ref=e663]: "2020"
+          - generic [ref=e664]: 2 papers
+          - generic [ref=e665]:
+            - generic [ref=e666]: ICDE
+            - generic [ref=e667]: ASE
+          - generic [ref=e668]: ▶
+        - generic [ref=e669]:
+          - generic [ref=e670]:
+            - text: "[C5] Yeting Li, Jialun Cao, Haiming Chen, Tingjian Ge, Zhiwu Xu, Qiancheng Peng."
+            - emphasis [ref=e671]: "FlashSchema: Achieving High Quality XML Schemas with Powerful Inference Algorithms and Large-scale Schema Data."
+            - strong [ref=e672]: ICDE 2020
+            - text: .
+            - link "[Paper]" [ref=e673] [cursor=pointer]:
+              - /url: https://ieeexplore.ieee.org/document/9101818
+          - generic [ref=e674]:
+            - text: "[C6] Yeting Li, Zhiwu Xu, Jialun Cao, Haiming Chen, Tingjian Ge, Shing-Chi Cheung."
+            - emphasis [ref=e675]: "FlashRegex: Deducing Anti-ReDoS Regexes from Examples."
+            - strong [ref=e676]: ASE 2020
+            - text: .
+            - link "[Paper]" [ref=e677] [cursor=pointer]:
+              - /url: https://dl.acm.org/doi/10.1145/3324884.3416556
+      - generic [ref=e678]:
+        - generic [ref=e679] [cursor=pointer]:
+          - generic [ref=e680]: "2019"
+          - generic [ref=e681]: 2 papers
+          - generic [ref=e682]:
+            - generic [ref=e683]: ICCD
+            - generic [ref=e684]: DASFAA
+          - generic [ref=e685]: ▶
+        - generic [ref=e686]:
+          - generic [ref=e687]:
+            - text: "[C3] Yongjian Li, Jialun Cao (1st student author), Jun Pang."
+            - emphasis [ref=e688]: A Learning-Based Framework for Automatic Parameterized Verification.
+            - strong [ref=e689]: ICCD 2019
+            - text: .
+            - link "[Paper]" [ref=e690] [cursor=pointer]:
+              - /url: https://ieeexplore.ieee.org/document/8988606
+          - generic [ref=e691]:
+            - text: "[C4] Yeting Li, Xiaolan Zhang, Jialun Cao, Haiming Chen, Chong Gao."
+            - emphasis [ref=e692]: Learning k-Occurrence Regular Expressions with Interleaving.
+            - strong [ref=e693]: DASFAA 2019
+            - text: .
+            - link "[Paper]" [ref=e694] [cursor=pointer]:
+              - /url: https://link.springer.com/chapter/10.1007/978-3-030-18579-4_5
+      - generic [ref=e695]:
+        - generic [ref=e696] [cursor=pointer]:
+          - generic [ref=e697]: "2018"
+          - generic [ref=e698]: 2 papers
+          - generic [ref=e699]:
+            - generic [ref=e700]: ASE
+            - generic [ref=e701]: QRS
+          - generic [ref=e702]: ▶
+        - generic [ref=e703]:
+          - generic [ref=e704]:
+            - text: "[C1] Jialun Cao, Yongjian Li, Jun Pang."
+            - emphasis [ref=e705]: "L-CMP: an automatic learning-based parameterized verification tool."
+            - strong [ref=e706]: ASE 2018 Demo
+            - text: .
+            - link "[Paper]" [ref=e707] [cursor=pointer]:
+              - /url: https://dl.acm.org/doi/10.1145/3238147.3240487
+            - link "[Code]" [ref=e708] [cursor=pointer]:
+              - /url: https://github.com/ArabelaTso/Learning-Based-ParaVerifer
+            - link "[Video]" [ref=e709] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=6Dl2HiiiS4E
+          - generic [ref=e710]:
+            - text: "[C2] Yongjian Li, Jialun Cao (1st student author), Kaiqiang Duan."
+            - emphasis [ref=e711]: An automatic parameterized verification of FLASH cache coherence protocol.
+            - strong [ref=e712]: QRS 2018
+            - text: .
+            - link "[Paper]" [ref=e713] [cursor=pointer]:
+              - /url: https://ieeexplore.ieee.org/abstract/document/8424956
+    - generic [ref=e714]:
+      - generic [ref=e716]: Teaching
+      - generic [ref=e717]:
+        - generic [ref=e718]: 2025 Spr
+        - generic [ref=e719]:
+          - strong [ref=e720]: Instructor
+          - text: in
+          - link "COMP 1021" [ref=e721] [cursor=pointer]:
+            - /url: https://course.cse.ust.hk/comp1021/
+          - text: — Introduction to Computer Science.
+          - link "[Materials]" [ref=e722] [cursor=pointer]:
+            - /url: https://github.com/ArabelaTso/COMP1021-2025S
+      - generic [ref=e723]:
+        - generic [ref=e724]: 2023 Fall
+        - generic [ref=e725]:
+          - strong [ref=e726]: Teaching Assistant
+          - text: in COMP 1021 — Introduction to Computer Science.
+      - generic [ref=e727]:
+        - generic [ref=e728]: 2020 Fall
+        - generic [ref=e729]:
+          - strong [ref=e730]: Teaching Assistant
+          - text: in COMP 3021 — Java Programming.
+      - generic [ref=e731]:
+        - generic [ref=e732]: 2020 Spr
+        - generic [ref=e733]:
+          - strong [ref=e734]: Teaching Assistant
+          - text: in COMP 3021 — Java Programming.
+    - generic [ref=e735]:
+      - generic [ref=e737]: Honors and Awards
+      - list [ref=e738]:
+        - listitem [ref=e739]:
+          - emphasis [ref=e740]: "2025"
+          - text: —
+          - link "ACM SIGSOFT Outstanding Doctoral Dissertation Award" [ref=e741] [cursor=pointer]:
+            - /url: https://www2.sigsoft.org/awards/dissertation/
+          - text: (1~2 worldwide/yr)
+        - listitem [ref=e742]:
+          - emphasis [ref=e743]: "2024"
+          - text: —
+          - link "Rising Stars Women in Engineering Workshop" [ref=e744] [cursor=pointer]:
+            - /url: https://risingstarsasia.org/index.php
+          - text: (Shortlisted)
+        - listitem [ref=e745]:
+          - emphasis [ref=e746]: "2024"
+          - text: — Hong Kong Postgraduate Studentship
+        - listitem [ref=e747]:
+          - emphasis [ref=e748]: "2024"
+          - text: — ACM SIGSOFT CAPS Travel Grant (ASE 2024)
+        - listitem [ref=e749]:
+          - emphasis [ref=e750]: "2023"
+          - text: — ACM SIGSOFT CAPS Travel Grant (ESEC/FSE 2023)
+        - listitem [ref=e751]:
+          - emphasis [ref=e752]: 2019-2023
+          - text: — Huawei Fellowship Scholarship
+        - listitem [ref=e753]:
+          - emphasis [ref=e754]: "2017"
+          - text: — China National Scholarship (Postgraduate, Rank 1/106, Top 1%)
+        - listitem [ref=e755]:
+          - emphasis [ref=e756]: "2014"
+          - text: — China National Scholarship (Undergraduate, Rank 1/52, Top 2%)
+    - generic [ref=e757]:
+      - generic [ref=e759]: Working Experience
+      - generic [ref=e760]:
+        - generic [ref=e761]: 2024.08 - now
+        - generic [ref=e762]: Research Assistant Professor
+        - generic [ref=e763]: Department of Computer Science and Engineering, HKUST
+      - generic [ref=e764]:
+        - generic [ref=e765]: 2024.04 - 2024.07
+        - generic [ref=e766]: Postdoctoral Fellow
+        - generic [ref=e767]:
+          - text: HKUST, working with
+          - link "Prof. Shing-Chi Cheung" [ref=e768] [cursor=pointer]:
+            - /url: https://www.cse.ust.hk/faculty/scc/
+      - generic [ref=e769]:
+        - generic [ref=e770]: 2023.07 - 2023.09
+        - generic [ref=e771]: Intern at Huawei (Hong Kong) — Fermat Lab
+      - generic [ref=e772]:
+        - generic [ref=e773]: 2022.09 - 2023.01
+        - generic [ref=e774]: Intern at Huawei — Trusted Software Engineering and Open Source Laboratory
+      - generic [ref=e775]:
+        - generic [ref=e776]: 2021.09 - 2022.08
+        - generic [ref=e777]: Intern at Huawei — Theory Lab
+    - generic [ref=e778]:
+      - generic [ref=e780]: Service
+      - generic [ref=e781]:
+        - generic [ref=e782]: Award Committee Member
+        - list [ref=e784]:
+          - listitem [ref=e785]:
+            - text: ACM SIGSOFT
+            - link "Outstanding Research Award 2025" [ref=e786] [cursor=pointer]:
+              - /url: https://www2.sigsoft.org/awards/outstandingresearch/
+          - listitem [ref=e787]:
+            - text: ACM SIGSOFT
+            - link "Distinguished Service Award 2025" [ref=e788] [cursor=pointer]:
+              - /url: https://www2.sigsoft.org/awards/distinguishedservice/
+          - listitem [ref=e789]:
+            - text: ACM SIGSOFT
+            - link "Influential Educator Award 2025" [ref=e790] [cursor=pointer]:
+              - /url: https://www2.sigsoft.org/awards/influentialeducator/
+      - generic [ref=e791]:
+        - generic [ref=e792]: Program Committee Member
+        - list [ref=e794]:
+          - listitem [ref=e795]:
+            - strong [ref=e796]: ICSE 2026
+            - link "research track" [ref=e797] [cursor=pointer]:
+              - /url: https://conf.researchr.org/committee/icse-2026/icse-2026-research-track-research-track
+            - text: ","
+            - strong [ref=e798]: ICSE 2025
+            - link "research track" [ref=e799] [cursor=pointer]:
+              - /url: https://conf.researchr.org/committee/icse-2025/icse-2025-research-track-research-track
+          - listitem [ref=e800]:
+            - strong [ref=e801]: ASE 2025
+            - link "research track" [ref=e802] [cursor=pointer]:
+              - /url: https://conf.researchr.org/committee/ase-2025/ase-2025-papers-program-committee
+            - text: ","
+            - strong [ref=e803]: FSE 2025
+            - link "research track" [ref=e804] [cursor=pointer]:
+              - /url: https://conf.researchr.org/committee/fse-2025/fse-2025-papers-program-committee
+            - text: ","
+            - strong [ref=e805]: ISSRE 2024
+            - link "research track" [ref=e806] [cursor=pointer]:
+              - /url: https://issre.github.io/2024/committee_research-PC.html
+          - listitem [ref=e807]:
+            - link "RAIE 2025" [ref=e808] [cursor=pointer]:
+              - /url: https://conf.researchr.org/committee/icse-2025/raie-2025-papers-program-committee
+            - text: ", APSEC"
+            - link "2024" [ref=e809] [cursor=pointer]:
+              - /url: https://conf.researchr.org/committee/apsec-2024/apsec-2024-technical-track-program-committee
+            - text: "-"
+            - link "25" [ref=e810] [cursor=pointer]:
+              - /url: https://conf.researchr.org/committee/apsec-2025/apsec-2025-papers-program-committee
+            - text: ", Internetware"
+            - link "2024" [ref=e811] [cursor=pointer]:
+              - /url: https://conf.researchr.org/committee/internetware-2024/internetware-2024-papers-program-committee
+            - text: "-"
+            - link "25" [ref=e812] [cursor=pointer]:
+              - /url: https://conf.researchr.org/committee/internetware-2025/internetware-2025-research-track-cuiyun-gao
+            - text: ","
+            - link "CAIN 2025" [ref=e813] [cursor=pointer]:
+              - /url: https://conf.researchr.org/committee/cain-2025/cain-2025-call-for-papers-program-committee
+            - text: ", Forge"
+            - link "2024" [ref=e814] [cursor=pointer]:
+              - /url: https://conf.researchr.org/committee/forge-2024/forge-2024-papers-program-committee
+            - text: "-"
+            - link "25" [ref=e815] [cursor=pointer]:
+              - /url: https://conf.researchr.org/committee/forge-2025/forge-2025-papers-program-committee
+            - text: ","
+            - link "SANER 2024" [ref=e816] [cursor=pointer]:
+              - /url: https://conf.researchr.org/committee/saner-2025/saner-2025-short-papers-and-posters-track-program-commitee
+            - text: ","
+            - link "AIware 2024" [ref=e817] [cursor=pointer]:
+              - /url: https://2024.aiwareconf.org/committee/aiware-2024-papers-program-committee
+      - generic [ref=e818]:
+        - generic [ref=e819]: Session Chair
+        - list [ref=e821]:
+          - listitem [ref=e822]:
+            - text: ASE 2024 —
+            - link "Code generation 3" [ref=e823] [cursor=pointer]:
+              - /url: https://conf.researchr.org/track/ase-2024/ase-2024-research
+            - text: ","
+            - link "Testing 1" [ref=e824] [cursor=pointer]:
+              - /url: https://conf.researchr.org/track/ase-2024/ase-2024-research
+          - listitem [ref=e825]:
+            - text: Internetware 2024 —
+            - link "Code Generation and Transformation" [ref=e826] [cursor=pointer]:
+              - /url: https://conf.researchr.org/track/internetware-2024/internetware-2024-research
+      - generic [ref=e827]:
+        - generic [ref=e828]: Reviewer
+        - generic [ref=e829]: TOSEM · TSE · EMSE · JASE · JSME · TKDD · TMC
+    - generic [ref=e830]:
+      - generic [ref=e832]: Invited Talks
+      - generic [ref=e833]:
+        - generic [ref=e834]: "2025.04"
+        - generic [ref=e835]:
+          - strong [ref=e836]: Exploring Code Generation and Reasoning Capabilities of LLMs.
+          - text: Peking University.
+          - link "[Link]" [ref=e837] [cursor=pointer]:
+            - /url: https://www.math.pku.edu.cn/kxyj/xsbg/tlb/informationsciences/167435.htm
+      - generic [ref=e838]:
+        - generic [ref=e839]: "2025.01"
+        - generic [ref=e840]:
+          - strong [ref=e841]: From Benchmarks to Practice.
+          - text: Huawei AI R&D Seminar.
+          - link "[Recording]" [ref=e842] [cursor=pointer]:
+            - /url: https://www.chaspark.com/#/live/1095803543143456768?videoId=1100606948265017344
+      - generic [ref=e843]:
+        - generic [ref=e844]: "2025.01"
+        - generic [ref=e845]:
+          - strong [ref=e846]: From Requirement to Formal Specification via LLMs.
+          - text: Zhejiang University.
+      - generic [ref=e847]:
+        - generic [ref=e848]: "2024.11"
+        - generic [ref=e849]:
+          - strong [ref=e850]: Is LLM a Rescue for Code Generation & Reasoning?
+          - text: CCF China Open Source Conference.
+      - generic [ref=e851]:
+        - generic [ref=e852]: "2024.10"
+        - generic [ref=e853]:
+          - strong [ref=e854]: Automatic Testing and Verification using LLMs.
+          - text: Xidian University.
+      - generic [ref=e855]:
+        - generic [ref=e856]: "2024.08"
+        - generic [ref=e857]:
+          - strong [ref=e858]: Trusted Architecture of Intelligent CPS.
+          - text: Fudan University.
+          - link "[Link]" [ref=e859] [cursor=pointer]:
+            - /url: https://mp.weixin.qq.com/s/03JZNjTbinRYmDirEapBoA
+      - generic [ref=e860]:
+        - generic [ref=e861]: "2024.08"
+        - generic [ref=e862]:
+          - strong [ref=e863]: Can AI be a Panacea for Software Reliability?
+          - text: University College London.
+      - generic [ref=e864]:
+        - generic [ref=e865]: "2024.07"
+        - generic [ref=e866]:
+          - strong [ref=e867]: Data Contamination in Code LMs.
+          - text: IEEE Cloud & AI Symposium.
+      - generic [ref=e868]:
+        - generic [ref=e869]: "2024.05"
+        - generic [ref=e870]:
+          - strong [ref=e871]: From Requirement to Formal Specification via LLMs.
+          - text: CCF FM Seminar.
+          - link "[Recording]" [ref=e872] [cursor=pointer]:
+            - /url: https://www.chaspark.com/#/live/994058991643467776?videoId=1006392740579553280
+      - generic [ref=e873]:
+        - generic [ref=e874]: "2023.12"
+        - generic [ref=e875]:
+          - strong [ref=e876]: "Crafting Future: A Dancer's Leap into CS."
+          - text: ChinaSoft Women Scholars Forum.
+      - generic [ref=e877]:
+        - generic [ref=e878]: "2023.12"
+        - generic [ref=e879]:
+          - strong [ref=e880]: Data Contamination in the Era of LLMs.
+          - text: ChinaSoft AIGC Forum.
+    - contentinfo [ref=e881]: Copyright © 2026 Jialun Cao
+    - generic [ref=e882] [cursor=pointer]:
+      - generic: Chat with Jialun's Fish
+      - img [ref=e883]:
+        - generic [ref=e896]: LLM

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>唐萍遥的个人主页</title>
+<link rel="stylesheet" href="assets/css/homepage.css">
+<link rel="icon" href="images/favicon.ico">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+
+<div class="page">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <img src="images/avatar.jpg" alt="唐萍遥" class="s-avatar">
+  <h1 class="s-name">唐萍遥</h1>
+  <p class="s-role">求职意向：剪辑师 / AI漫剧制作（实习）<br>&rarr; 长沙师范学院 · 艺术与科技</p>
+  <div class="theme-toggle" onclick="toggleTheme()"><span class="t-icon" id="themeIcon">&#9790;</span><span id="themeLabel">Light</span></div>
+  <div class="s-divider"></div>
+  <ul class="s-nav">
+    <li><a href="#about" class="active">关于我</a></li>
+    <li><a href="#news">项目动态</a></li>
+    <li><a href="#pubs">技能专长</a></li>
+    <li><a href="#featured">代表作品</a></li>
+    <li><a href="#publications">项目经历</a></li>
+    <li><a href="#teaching">在校经历</a></li>
+    <li><a href="#awards">证书荣誉</a></li>
+    <li><a href="#exp">实践经历</a></li>
+    <li><a href="#svc">学生工作</a></li>
+    <li><a href="#talks">自我评价</a></li>
+    <li><a href="#visitors">访客</a></li>
+  </ul>
+  <div class="s-links">
+    <span style="font-size:0.78rem;color:var(--gray-400)">&#9993; 2816094267 [at] qq [dot] com</span>
+    <a href="mailto:2816094267@qq.com">邮箱</a>
+    <a href="tel:13787057528">电话：13787057528</a>
+  </div>
+</aside>
+
+<!-- MAIN -->
+<div class="main">
+
+<!-- Hero -->
+<div class="hero" id="about">
+  <div class="hero-content">
+    <div class="hero-eyebrow">创作理念</div>
+    <h1 id="scramble-target">
+      <span class="line">用 <span class="hl">AI 与剪辑</span> 创作影像</span>
+      <span class="line">让 <span class="hl">每一帧</span> 都打动人心</span>
+    </h1>
+    <div class="hero-tags">
+      <span class="hero-tag">视频剪辑</span>
+      <span class="hero-tag">AI漫剧</span>
+      <span class="hero-tag">内容创作</span>
+      <span class="hero-tag">影视后期</span>
+    </div>
+  </div>
+</div>
+
+<!-- Bio -->
+<div class="sec gsap-fade" id="about-me">
+  <p class="intro">
+    我是 <strong>唐萍遥</strong>，<strong>长沙师范学院</strong> 艺术与科技专业本科生（2023.9 - 2027.6）。在校期间系统学习影视剪辑与特效、影像基础、媒介与传播、跨媒介技术、交互影像创作等核心课程，平均成绩 85 分以上，担任班级学习委员。
+  </p>
+  <p class="intro">
+    我专注于 <strong>AI 漫剧与短视频剪辑的全流程创作</strong>，熟练运用 DeepSeek、即梦 AI、可灵、LIB TV 等生成式工具，以及剪映、Photoshop、Illustrator 等剪辑与设计软件。曾统筹 <strong>徐特立 150 周年 AI 漫剧</strong> 项目，独立完成从脚本撰写、分镜设计、原画生成到剪辑配音的全流程作品。具备良好的美学思维与自主学习能力，追求高质量的影像呈现效果，希望从事 <strong>剪辑师 / AI 漫剧制作</strong> 实习岗位。
+  </p>
+</div>
+
+<!-- Awards Banner -->
+<div class="awards-banner">
+  <div class="ab-card">
+    <div class="ab-card-inner">
+      <div class="ab-card-front"><span class="ab-icon">&#127942;</span><div class="ab-text"><strong>普通话水平测试证书</strong></div></div>
+      <div class="ab-card-back"><span class="ab-back-text">标准普通话水平认证</span></div>
+    </div>
+  </div>
+  <div class="ab-card">
+    <div class="ab-card-inner">
+      <div class="ab-card-front"><span class="ab-icon">&#127942;</span><div class="ab-text"><strong>全国计算机二级证书</strong></div></div>
+      <div class="ab-card-back"><span class="ab-back-text">全国计算机等级考试二级</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- Marquee -->
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marquee">
+    <span>剪映</span><span class="mq-dot">&bull;</span><span>DeepSeek</span><span class="mq-dot">&bull;</span><span>即梦AI</span><span class="mq-dot">&bull;</span><span>可灵</span><span class="mq-dot">&bull;</span><span>LIB TV</span><span class="mq-dot">&bull;</span><span>Photoshop</span><span class="mq-dot">&bull;</span><span>Premiere Pro</span><span class="mq-dot">&bull;</span><span>After Effects</span><span class="mq-dot">&bull;</span><span>Illustrator</span><span class="mq-dot">&bull;</span><span>ChatGPT</span><span class="mq-dot">&bull;</span>
+    <span>剪映</span><span class="mq-dot">&bull;</span><span>DeepSeek</span><span class="mq-dot">&bull;</span><span>即梦AI</span><span class="mq-dot">&bull;</span><span>可灵</span><span class="mq-dot">&bull;</span><span>LIB TV</span><span class="mq-dot">&bull;</span><span>Photoshop</span><span class="mq-dot">&bull;</span><span>Premiere Pro</span><span class="mq-dot">&bull;</span><span>After Effects</span><span class="mq-dot">&bull;</span><span>Illustrator</span><span class="mq-dot">&bull;</span><span>ChatGPT</span><span class="mq-dot">&bull;</span>
+  </div>
+</div>
+
+<!-- Hiring -->
+<div class="sec gsap-fade">
+  <div class="hiring">
+    <h3>&#128293; 求职意向 &mdash; 剪辑师 / AI漫剧制作</h3>
+    <p>正在寻找 <strong style="color:var(--primary);">剪辑师 / AI 漫剧制作</strong> 实习机会，期待用 AI 工具与剪辑技艺创作优质内容！</p>
+    <div class="hiring-sub">意向方向：</div>
+    <ul><li>短视频剪辑与后期制作</li><li>AI 漫剧 / AI 短剧全流程制作</li><li>宣传片、纪录片剪辑合成</li></ul>
+    <div class="hiring-tags">
+      <span class="h-tag">短视频剪辑</span>
+      <span class="h-tag">AI漫剧制作</span>
+      <span class="h-tag">影视后期</span>
+    </div>
+    <p style="margin-top:0.75rem; font-size:0.82rem;">&#128233; 联系方式：2816094267 [at] qq [dot] hk &nbsp;|&nbsp; &#128222; 13787057528</p>
+  </div>
+</div>
+
+<!-- News -->
+<div class="sec alt gsap-fade" id="news">
+  <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">项目动态</div></div>
+  <div class="news-item"><span class="n-date">2026.06</span><span>&#127881; 完成 <strong>徐特立 150 周年 AI 漫剧</strong> 3 集作品制作，适配短视频平台传播。</span></div>
+  <div class="news-item"><span class="n-date">2026.05</span><span>&#127881; 启动校园徐特立 150 周年 AI 漫剧项目，负责内容策划与全流程制作。</span></div>
+  <div class="news-item"><span class="n-date">2025.11</span><span>&#127881; 完成长沙宣传纪录片：对照脚本进行素材拍摄、收集、生成与剪辑合成。</span></div>
+  <div class="news-item"><span class="n-date">2025.06</span><span>担任 <span class="n-hl">大学生自治委员会部长</span>，主导多场校园活动宣传物料制作。</span></div>
+  <div class="news-item"><span class="n-date">2023.09</span><span>入读 <span class="n-hl">长沙师范学院</span> 艺术与科技专业，任班级学习委员。</span></div>
+</div>
+
+<!-- Education -->
+<div class="sec gsap-fade">
+  <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">教育经历</div></div>
+  <div class="list-item"><span class="li-date">2023.09 - 2027.06</span><span><strong>长沙师范学院</strong> &mdash; 艺术与科技（本科）。主修影视剪辑与特效、影像基础、媒介与传播、跨媒介技术、交互影像创作等核心课程；平均成绩 85+，任学习委员。</span></div>
+</div>
+
+<!-- Research Topics -->
+<div class="sec alt gsap-fade" id="pubs">
+  <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">技能专长</div></div>
+
+  <div class="research-grid">
+
+  <!-- TOPIC 1: Video Editing -->
+  <div class="research-topic" id="topic-benchmark" style="--topic-color:#0000C4">
+    <div class="research-topic-inner">
+      <div class="topic-header">
+        <span class="topic-num" style="background:rgba(0,0,196,0.1);color:#0000C4;">01</span>
+        <h2 class="topic-title" style="color:#0000C4;">视频剪辑</h2>
+      </div>
+      <p class="topic-desc">熟练运用剪映、Premiere Pro、After Effects 完成视频剪辑、转场特效、字幕与配音合成。</p>
+      <div class="topic-animation-box" id="benchmarkAnim">
+        <div class="bench-switcher">
+          <button class="bench-btn active" data-bench="humaneval">短视频</button>
+          <button class="bench-btn" data-bench="mbpp">AI漫剧</button>
+          <button class="bench-btn" data-bench="livecodebench">宣传片</button>
+          <button class="bench-btn" data-bench="swebench">纪录片</button>
+          <button class="bench-btn" data-bench="cruxeval">后期特效</button>
+        </div>
+        <div id="benchRows"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOPIC 2: AI Content Production -->
+  <div class="research-topic" id="topic-llm4se" style="--topic-color:#bf616a">
+    <div class="research-topic-inner">
+      <div class="topic-header">
+        <span class="topic-num" style="background:rgba(191,97,106,0.1);color:#bf616a;">02</span>
+        <h2 class="topic-title" style="color:#bf616a;">AI 内容生产</h2>
+      </div>
+      <div class="topic-animation-box" id="nlToCodeAnim">
+        <div class="code-transform-container">
+          <div class="code-block" id="nlBlock">
+            <span class="label" style="color:#bf616a;">创作需求</span>
+            <p class="nl-line" data-delay="0">为徐特立 150 周年制作 3 集 AI 漫剧，结合生平事迹，年轻化表达，适配短视频平台。</p>
+          </div>
+          <div class="code-arrow">
+            <div class="arrow-inner">
+              <div class="arrow-line"></div>
+              <span class="arrow-text" style="color:#bf616a;">AI</span>
+              <div class="arrow-line"></div>
+            </div>
+          </div>
+          <div class="code-block" id="genBlock">
+            <span class="label" style="color:#34d399;">AI 生成流程</span>
+            <div class="code-line" data-delay="4"><span class="syn-kw">脚本</span> <span class="fn">DeepSeek</span> 撰写</div>
+            <div class="code-line" data-delay="5">  分镜设计 + IP 形象设定</div>
+            <div class="code-line" data-delay="6">  <span class="syn-kw">原画</span> 即梦AI / 可灵 生成</div>
+            <div class="code-line" data-delay="7">  <span class="syn-kw">动态</span> LIB TV 制作</div>
+            <div class="code-line" data-delay="8">  <span class="syn-kw">剪辑</span> 剪映合成 + 配音</div>
+            <div class="code-line" data-delay="9">  <span class="syn-kw">海报</span> PS 封面 + 宣传素材</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOPIC 3: AI Comic Full Pipeline -->
+  <div class="research-topic" id="topic-fm" style="--topic-color:#34d399">
+    <div class="research-topic-inner">
+      <div class="topic-header">
+        <span class="topic-num" style="background:rgba(52,211,153,0.1);color:#34d399;">03</span>
+        <h2 class="topic-title" style="color:#34d399;">AI 漫剧全流程</h2>
+      </div>
+      <div class="topic-animation-box" id="acslAnim">
+        <div class="code-transform-container">
+          <div class="code-block" id="cCode">
+            <span class="label" style="color:var(--gray-400);">原始脚本</span>
+            <div class="code-line" data-delay="0"><span class="syn-kw">场景</span> <span class="fn">第一集</span> {</div>
+            <div class="code-line" data-delay="1">  <span class="syn-kw">主题</span> 求学立志</div>
+            <div class="code-line" data-delay="2">    <span class="syn-kw">画面</span> 少年读书</div>
+            <div class="code-line" data-delay="3">  <span class="syn-kw">旁白</span> 以知识报国</div>
+            <div class="code-line" data-delay="4">}</div>
+          </div>
+          <div class="code-arrow">
+            <div class="arrow-inner">
+              <div class="arrow-line"></div>
+              <span class="arrow-text" style="color:#34d399;">流程</span>
+              <div class="arrow-line"></div>
+            </div>
+          </div>
+          <div class="code-block" id="acslCode">
+            <span class="label" style="color:#34d399;">成片输出</span>
+            <div class="code-line acsl-line" data-delay="5"><span class="cm">/* 分镜 1：特写书桌</span></div>
+            <div class="code-line acsl-line" data-delay="6"><span class="cm">   镜头：推镜 + 暖色调 */</span></div>
+            <div class="code-line acsl-line" data-delay="7"><span class="cm">/* 分镜 2：远景校园</span></div>
+            <div class="code-line acsl-line" data-delay="8"><span class="cm">   转场：溶解 + 配乐起 */</span></div>
+            <div class="code-line acsl-line" data-delay="9"><span class="cm">/* 字幕 + 背景音乐 */</span></div>
+            <div class="code-line" data-delay="10"><span class="syn-kw">输出</span> <span class="fn">第1集成片</span> {</div>
+            <div class="code-line" data-delay="11">  <span class="syn-kw">时长</span> <span class="num">90</span>s</div>
+            <div class="code-line" data-delay="12">  <span class="syn-kw">画幅</span> 竖版 9:16</div>
+            <div class="code-line" data-delay="13">  <span class="syn-kw">平台</span> 短视频</div>
+            <div class="code-line" data-delay="14">}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOPIC 4: Design & Post-Production -->
+  <div class="research-topic" id="topic-se4ai" style="--topic-color:#4d6dff">
+    <div class="research-topic-inner">
+      <div class="topic-header">
+        <span class="topic-num" style="background:rgba(77,109,255,0.1);color:#4d6dff;">04</span>
+        <h2 class="topic-title" style="color:#4d6dff;">设计与后期</h2>
+      </div>
+      <div class="topic-animation-box" id="nnBugAnim">
+        <svg id="nnSvg" viewBox="0 0 480 260" style="width:100%;max-width:480px;height:auto;">
+          <g id="nnEdges"></g>
+          <g id="nnNodes">
+            <circle class="nn-node" cx="60" cy="50" r="18" data-layer="0"/>
+            <circle class="nn-node" cx="60" cy="130" r="18" data-layer="0"/>
+            <circle class="nn-node" cx="60" cy="210" r="18" data-layer="0"/>
+            <circle class="nn-node" cx="190" cy="30" r="18" data-layer="1"/>
+            <circle class="nn-node" cx="190" cy="100" r="18" data-layer="1" data-buggy="true"/>
+            <circle class="nn-node" cx="190" cy="170" r="18" data-layer="1"/>
+            <circle class="nn-node" cx="190" cy="240" r="18" data-layer="1" data-buggy="true"/>
+            <circle class="nn-node" cx="320" cy="30" r="18" data-layer="2"/>
+            <circle class="nn-node" cx="320" cy="100" r="18" data-layer="2" data-buggy="true"/>
+            <circle class="nn-node" cx="320" cy="170" r="18" data-layer="2"/>
+            <circle class="nn-node" cx="320" cy="240" r="18" data-layer="2"/>
+            <circle class="nn-node" cx="430" cy="90" r="18" data-layer="3"/>
+            <circle class="nn-node" cx="430" cy="170" r="18" data-layer="3"/>
+          </g>
+          <text x="60" y="256" text-anchor="middle" class="nn-label">素材</text>
+          <text x="190" y="256" text-anchor="middle" class="nn-label">处理</text>
+          <text x="320" y="256" text-anchor="middle" class="nn-label">优化</text>
+          <text x="430" y="256" text-anchor="middle" class="nn-label">成品</text>
+        </svg>
+        <div class="nn-status">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:0.75rem;color:var(--gray-400)">处理中... <span id="nnBugCount" style="color:var(--accent-warm);font-weight:700">0</span> 项优化</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="pub-grid" style="margin-top:1.5rem;">
+    <div class="pub-cat cat-bench"><div class="pc-head"><span class="pc-name">视频剪辑</span><span class="pc-n">5+</span></div><div class="pc-kw"><span class="kw">剪映</span><span class="kw">Premiere Pro</span><span class="kw">After Effects</span><span class="kw">转场特效</span><span class="kw">字幕配音</span></div></div>
+    <div class="pub-cat cat-se"><div class="pc-head"><span class="pc-name">AI 内容生产</span><span class="pc-n">5+</span></div><div class="pc-kw"><span class="kw">DeepSeek</span><span class="kw">即梦AI</span><span class="kw">可灵</span><span class="kw">LIB TV</span><span class="kw">ChatGPT</span></div></div>
+    <div class="pub-cat cat-fm"><div class="pc-head"><span class="pc-name">AI 漫剧制作</span><span class="pc-n">全流程</span></div><div class="pc-kw"><span class="kw">脚本撰写</span><span class="kw">分镜设计</span><span class="kw">原画生成</span><span class="kw">动态制作</span><span class="kw">剪辑合成</span></div></div>
+    <div class="pub-cat cat-seai"><div class="pc-head"><span class="pc-name">设计后期</span><span class="pc-n">4+</span></div><div class="pc-kw"><span class="kw">Photoshop</span><span class="kw">Illustrator</span><span class="kw">海报设计</span><span class="kw">封面制作</span><span class="kw">色彩优化</span></div></div>
+  </div>
+
+  <div class="sec-head" id="featured" style="margin-top:1.5rem;"><div class="sec-bar"></div><div class="sec-title">代表作品</div></div>
+
+  <div class="fw-list" style="margin-bottom:1.25rem;">
+    <div class="fw"><span class="fw-venue">项目 '26</span><div><h3>徐特立 150 周年 AI 漫剧制作</h3><div class="fw-meta"><span class="me">唐萍遥</span>（统筹策划 / 全流程制作）</div><div class="fw-impact">3 集短视频平台 AI 漫剧 &middot; 完成脚本、分镜、原画、动态、剪辑、海报全流程</div></div></div>
+    <div class="fw"><span class="fw-venue">项目 '25</span><div><h3>长沙宣传纪录片剪辑合成</h3><div class="fw-meta"><span class="me">唐萍遥</span>（拍摄 / 剪辑合成）</div><div class="fw-impact">对照脚本完成素材拍摄、收集、生成与剪辑合成</div></div></div>
+  </div>
+
+  <div class="sec-head" id="publications" style="margin-top:1.5rem;"><div class="sec-bar"></div><div class="sec-title">项目经历</div><span class="sec-count">2+</span></div>
+
+  <div class="year-block open">
+    <div class="year-header" onclick="this.parentElement.classList.toggle('open')"><span class="year-label">2026</span><span class="year-count">1 个项目</span><div class="year-venues"><span class="year-venue-tag">AI漫剧</span><span class="year-venue-tag">短视频</span></div><span class="year-arrow">&#9654;</span></div>
+    <div class="year-body"><div class="year-body-inner">
+      <div class="pub-item">[P2] <span class="me">唐萍遥</span>（统筹 / 全流程制作）. <em>校园徐特立 150 周年 AI 漫剧制作项目.</em> <strong>2026.05 - 2026.06</strong>. 为配合徐老 150 周年宣传，制作 3 集适配短视频平台的 AI 漫剧；结合徐特立生平事迹使用 DeepSeek 完成脚本撰写，完成分镜设计与人物 IP 形象设定；使用即梦 AI、可灵、小云雀等工具完成原画生成，通过 LIB TV 完成动态效果；运用剪映完成剪辑、配音、转场特效、字幕、背景音乐；使用 PS 完成漫剧封面与宣传海报。</div>
+    </div></div>
+  </div>
+
+  <div class="year-block">
+    <div class="year-header" onclick="this.parentElement.classList.toggle('open')"><span class="year-label">2025</span><span class="year-count">2 个项目</span><div class="year-venues"><span class="year-venue-tag">纪录片</span><span class="year-venue-tag">宣传</span></div><span class="year-arrow">&#9654;</span></div>
+    <div class="year-body"><div class="year-body-inner">
+      <div class="pub-item">[P1] <span class="me">唐萍遥</span>（拍摄 / 剪辑）. <em>长沙宣传纪录片.</em> <strong>2025.11</strong>. 对照脚本进行素材的拍摄、收集、生成，最后剪辑合成长沙的宣传记录片。</div>
+      <div class="pub-item">[S1] <span class="me">唐萍遥</span>（部长）. <em>校园活动宣传物料制作.</em> <strong>2025</strong>. 运用剪映、PS 完成活动宣传视频、海报的剪辑与视觉优化；建立内容审核标准化流程，物料差错率控制在 2% 以内。</div>
+    </div></div>
+  </div>
+</div>
+
+<!-- 在校经历 -->
+<div class="sec gsap-fade" id="teaching">
+  <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">在校经历</div></div>
+  <div class="list-item"><span class="li-date">2023.09 - 至今</span><span><strong>学习委员</strong> &mdash; 班级学业管理。统筹班级学业相关事务，梳理各课程作业提交、考核节点的标准化提醒流程；对接授课教师与 30 名同学的学业需求，整理课程资料与技能教程，同步 AI 工具使用技巧。</span></div>
+  <div class="list-item"><span class="li-date">2023.09 - 2025.06</span><span><strong>部长</strong> &mdash; 大学生自治委员会。负责部门活动的宣传物料制作，主导校园活动的策划和组织，安排相关人员调度及对接。</span></div>
+</div>
+
+<!-- 证书荣誉 -->
+<div class="sec alt gsap-fade" id="awards">
+  <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">证书荣誉</div></div>
+  <ul class="awards-list">
+    <li><em>在校期间</em> &mdash; 普通话水平测试证书</li>
+    <li><em>在校期间</em> &mdash; 全国计算机二级证书</li>
+    <li><em>专业课程</em> &mdash; 牵头完成影像创作项目，作品平均得分位列年级前 5%</li>
+    <li><em>2023 - 至今</em> &mdash; 担任班级学习委员，平均成绩 85 分以上</li>
+  </ul>
+</div>
+
+<!-- 实践经历 -->
+<div class="sec alt gsap-fade" id="exp">
+  <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">实践经历</div></div>
+  <div class="tl"><div class="tl-y">2026.05 - 2026.06</div><div class="tl-t">AI 漫剧制作（徐特立 150 周年）</div><div class="tl-d">统筹漫剧内容策划与全流程制作：脚本、分镜、原画、动态、剪辑、海报</div></div>
+  <div class="tl"><div class="tl-y">2025.11</div><div class="tl-t">长沙宣传纪录片</div><div class="tl-d">对照脚本进行素材拍摄、收集、生成，最后剪辑合成</div></div>
+  <div class="tl"><div class="tl-y">2023.09 - 2025.06</div><div class="tl-t">大学生自治委员会 &mdash; 部长</div><div class="tl-d">活动宣传物料制作与视觉优化，内容审核差错率控制在 2% 以内</div></div>
+</div>
+
+<!-- 学生工作 -->
+<div class="sec gsap-fade" id="svc">
+  <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">学生工作</div></div>
+  <div class="svc-group"><div class="svc-label">班级工作 &mdash; 学习委员</div><div class="svc-body"><ul>
+    <li>统筹班级学业相关事务，梳理各课程作业提交、考核节点的标准化提醒流程，保障学业事务推进效率</li>
+    <li>对接授课教师与 30 名班级同学的学业需求，整理课程资料与技能教程，同步 AI 工具使用技巧</li>
+    <li>协调班级项目分组分工，牵头完成专业课程影像创作项目，作品平均得分位列年级前 5%</li>
+  </ul></div></div>
+  <div class="svc-group"><div class="svc-label">学生会工作 &mdash; 部长</div><div class="svc-body"><ul>
+    <li>负责部门活动的宣传物料制作，运用剪映、PS 完成活动宣传视频、海报的剪辑与视觉优化</li>
+    <li>主导校园活动的策划和组织，安排相关人员的调度及对接</li>
+    <li>建立内容审核标准化流程，对交付的视频、图像物料进行多轮校验，内容差错率控制在 2% 以内</li>
+  </ul></div></div>
+  <div class="svc-group"><div class="svc-label">相关技能</div><div class="svc-body">视频剪辑 &middot; AI 内容生产 &middot; 设计后期 &middot; AI 短剧全流程 &middot; 音视频素材处理</div></div>
+</div>
+
+<!-- 自我评价 -->
+<div class="sec alt gsap-fade" id="talks">
+  <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">自我评价</div></div>
+  <div class="list-item"><span class="li-date">01</span><span>艺术与科技专业背景，掌握 AI 漫剧与短视频剪辑全流程逻辑，具备 AI 生成工具运用能力与数字内容制作基础技能。</span></div>
+  <div class="list-item"><span class="li-date">02</span><span>拥有较好的美学思维，熟悉主流剪辑、图像处理工具的操作方法，可适配内容创作及素材处理多类岗位的基础工作需求。</span></div>
+  <div class="list-item"><span class="li-date">03</span><span>具有强烈的探索精神与自主学习能力，善于在项目中迭代优化，追求高质量的影像呈现效果。</span></div>
+</div>
+
+<!-- Visitors -->
+<div class="sec gsap-fade" id="visitors">
+  <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">访客</div></div>
+  <div class="visitor-stats">
+    <div class="visitor-stat"><span class="visitor-num" id="visitor-count">0</span><span class="visitor-label">Unique Visitors</span></div>
+    <div class="visitor-stat"><span class="visitor-num" id="country-count">0</span><span class="visitor-label">Countries / Regions</span></div>
+  </div>
+  <div class="visitor-map-wrap">
+    <div id="visitor-map"></div>
+  </div>
+  <p class="visitor-notice" id="visitor-notice" style="display:none">Demo data shown. Configure Firebase to enable live tracking.</p>
+</div>
+
+<footer class="footer">Copyright &copy; 2026 唐萍遥</footer>
+
+<div class="chat-panel" id="chatPanel"><div class="chat-header"><span>&#128032; guppyLLM-9M</span><button class="chat-close" onclick="document.getElementById('chatPanel').classList.remove('open')">&times;</button></div><div class="chat-body" id="chatBody"><div class="chat-msg bot">你好！我是唐萍遥的小鱼助手 guppyLM-9M。可以问我唐萍遥的技能、项目、证书或联系方式！</div></div><div class="chat-input-row"><input class="chat-input" id="chatInput" placeholder="问我技能、项目、证书、联系方式..." onkeydown="if(event.key==='Enter')sendChat()"><button class="chat-send" onclick="sendChat()">发送</button></div></div>
+<div class="guppy-container" onclick="document.getElementById('chatPanel').classList.toggle('open')"><div class="guppy-tooltip">和唐萍遥的小鱼聊天</div><svg class="guppy-fish" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg"><ellipse cx="58" cy="40" rx="34" ry="22" fill="#5e81ac" opacity="0.9"/><ellipse cx="58" cy="46" rx="24" ry="12" fill="#88c0d0" opacity="0.5"/><path d="M24,40 Q8,24 14,12 Q20,22 24,30 Z" fill="#81a1c1" opacity="0.8"/><path d="M24,40 Q8,56 14,68 Q20,58 24,50 Z" fill="#81a1c1" opacity="0.8"/><path d="M50,18 Q58,4 70,16 Q62,18 54,18 Z" fill="#81a1c1" opacity="0.7"/><path d="M62,50 Q68,60 58,64 Q60,56 62,50 Z" fill="#81a1c1" opacity="0.6"/><circle cx="76" cy="36" r="5" fill="white"/><circle cx="77.5" cy="35.5" r="2.5" fill="#2e3440"/><circle cx="78.5" cy="34.5" r="1" fill="white"/><path d="M90,40 Q92,42 90,44" stroke="#4c566a" stroke-width="1.2" fill="none" stroke-linecap="round"/><circle cx="98" cy="30" r="2" fill="none" stroke="#88c0d0" stroke-width="0.8" opacity="0.5"><animate attributeName="cy" values="30;22;16" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0.3;0" dur="2s" repeatCount="indefinite"/></circle><circle cx="102" cy="26" r="1.5" fill="none" stroke="#88c0d0" stroke-width="0.6" opacity="0.4"><animate attributeName="cy" values="26;18;10" dur="2.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;0.2;0" dur="2.5s" repeatCount="indefinite"/></circle><text x="52" y="43" font-family="Inter,sans-serif" font-size="7" font-weight="700" fill="#eceff4" opacity="0.7">LLM</text></svg></div>
+
+</div><!-- /main -->
+</div><!-- /page -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/homepage.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="assets/js/visitor-tracker.js"></script>
+</body>
+</html>
