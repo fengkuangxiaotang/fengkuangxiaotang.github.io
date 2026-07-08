@@ -20,6 +20,21 @@
   .js .reveal { opacity:0; transform:translateY(26px); transition:opacity .7s ease, transform .7s ease; }
   .js .reveal.in-view { opacity:1; transform:none; }
 
+  /* long-text sections slide in from the left */
+  .js .reveal-left { opacity:0; transform:translateX(-46px); transition:opacity .7s ease, transform .7s ease; }
+  .js .reveal-left.in-view { opacity:1; transform:none; }
+
+  /* hover glow */
+  .s-avatar { transition: box-shadow .3s ease, border-color .3s ease; }
+  .s-avatar:hover { box-shadow: 0 0 22px rgba(0,0,196,0.35); border-color: var(--primary); }
+  .edu-card, .cert-item { transition: transform .2s ease, box-shadow .3s ease, border-color .3s ease; }
+  .stat-card:hover, .tl-card:hover, .edu-card:hover, .cert-item:hover {
+    box-shadow: 0 0 20px rgba(0,0,196,0.18);
+    border-color: var(--primary);
+  }
+  .s-nav a { transition: background .15s, color .15s, box-shadow .25s ease; }
+  .s-nav a:hover { box-shadow: 0 0 14px rgba(0,0,196,0.18); }
+
   .bar-fill { width: var(--w); }
   .js .bar-fill { width:0; transition: width 1.1s cubic-bezier(.4,0,.2,1); }
   .js .skills.in-view .bar-fill { width: var(--w); }
@@ -157,7 +172,7 @@
 </div>
 
 <!-- About -->
-<div class="sec alt reveal" id="about-me">
+<div class="sec alt reveal-left" id="about-me">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">关于我</div></div>
   <p class="intro">
     我是<strong>唐萍遥</strong>，长沙师范学院<strong>艺术与科技</strong>专业（模块二：数字影像与交互设计方向）本科生，将于 2027 年 6 月毕业。我系统学习用户体验设计、信息架构、移动数字应用设计与交互影像创作，具备<strong>从用户研究到原型落地全流程的设计能力</strong>。
@@ -301,7 +316,7 @@
 </div>
 
 <!-- Education -->
-<div class="sec alt reveal" id="education">
+<div class="sec alt reveal-left" id="education">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">教育经历</div></div>
   <div class="edu-card">
     <div class="edu-school">长沙师范学院</div>
@@ -315,7 +330,7 @@
 </div>
 
 <!-- Campus -->
-<div class="sec reveal" id="campus">
+<div class="sec reveal-left" id="campus">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">在校经历</div></div>
 
   <div class="edu-card" style="margin-bottom:0.9rem;">
@@ -347,7 +362,7 @@
 </div>
 
 <!-- Self Evaluation -->
-<div class="sec reveal" id="self">
+<div class="sec reveal-left" id="self">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">自我评价</div></div>
   <p class="intro">艺术与科技专业模块二方向背景，系统学习了用户体验设计、信息架构设计、移动数字应用设计、交互影像创作等核心课程，具备从用户研究到产品原型设计的全流程能力。</p>
   <p class="intro">具备较强的用户视角与同理心，在适老设计、无障碍设计等方向有实践经验，熟悉交互设计方法论与用户研究工具，可适配产品设计、交互设计及用户体验优化多类岗位需求。</p>
@@ -373,7 +388,7 @@
       }
     });
   }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  document.querySelectorAll('.reveal, .reveal-left').forEach(function(el){ io.observe(el); });
 
   function animateStats(){
     document.querySelectorAll('#stats .cnt').forEach(function(el){
