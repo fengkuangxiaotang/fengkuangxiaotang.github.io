@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="assets/css/homepage.css">
 <style>
   body { font-family: 'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', -apple-system, sans-serif; }
+  /* safety: never hide sections if GSAP reveal script is absent */
+  .gsap-fade, .gsap-fade-right { opacity: 1 !important; transform: none !important; }
   .s-avatar { display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg,#4d6dff,#0000C4); color:#fff; font-size:3.2rem; font-weight:800; object-fit:cover; }
   /* project cards */
   .proj { padding:0.95rem 1.1rem; border:1px solid var(--gray-200); border-radius:10px; margin-bottom:0.85rem; background:var(--white); transition:border-color .2s,box-shadow .2s; }
@@ -79,7 +81,7 @@
 </div>
 
 <!-- Bio -->
-<div class="sec gsap-fade" id="about-me">
+<div class="sec" id="about-me">
   <p class="intro">
     我是<strong>唐萍遥</strong>，长沙师范学院<strong>艺术与科技</strong>专业（模块二：数字影像与交互设计方向）本科生，将于 2027 年 6 月毕业。我系统学习了用户体验设计、信息架构设计、移动数字应用设计、交互影像创作等核心课程，具备<strong>从用户研究到产品原型设计的全流程能力</strong>。
   </p>
@@ -89,7 +91,7 @@
 </div>
 
 <!-- Education -->
-<div class="sec alt gsap-fade" id="education">
+<div class="sec alt" id="education">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">教育经历</div></div>
   <div class="list-item">
     <span class="li-date">2023.9<br>–<br>2027.6</span>
@@ -105,7 +107,7 @@
 </div>
 
 <!-- Projects -->
-<div class="sec gsap-fade" id="projects">
+<div class="sec" id="projects">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">项目经历</div></div>
 
   <div class="proj">
@@ -152,7 +154,7 @@
 </div>
 
 <!-- Campus Experience -->
-<div class="sec alt gsap-fade" id="campus">
+<div class="sec alt" id="campus">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">在校经历</div></div>
 
   <div class="list-item">
@@ -181,7 +183,7 @@
 </div>
 
 <!-- Skills -->
-<div class="sec gsap-fade" id="skills">
+<div class="sec" id="skills">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">专业技能</div></div>
 
   <div class="skill-cat">
@@ -207,7 +209,7 @@
 </div>
 
 <!-- Certificates -->
-<div class="sec alt gsap-fade" id="certs">
+<div class="sec alt" id="certs">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">获得证书</div></div>
   <div class="cert-list">
     <span class="cert-item">普通话水平测试证书</span>
@@ -216,7 +218,7 @@
 </div>
 
 <!-- Self Evaluation -->
-<div class="sec gsap-fade" id="self">
+<div class="sec" id="self">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">自我评价</div></div>
   <p class="intro">艺术与科技专业模块二方向背景，系统学习了用户体验设计、信息架构设计、移动数字应用设计、交互影像创作等核心课程，具备从用户研究到产品原型设计的全流程能力。</p>
   <p class="intro">具备较强的用户视角与同理心，在适老设计、无障碍设计等方向有实践经验，熟悉交互设计方法论与用户研究工具，可适配产品设计、交互设计及用户体验优化多类岗位需求。</p>
