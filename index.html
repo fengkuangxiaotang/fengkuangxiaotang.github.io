@@ -24,6 +24,14 @@
   .js .reveal-left { opacity:0; transform:translateX(-46px); transition:opacity .7s ease, transform .7s ease; }
   .js .reveal-left.in-view { opacity:1; transform:none; }
 
+  /* skills rows slide in from the left with stagger */
+  .js .skills .skill-bar-row { opacity:0; transform:translateX(-32px); transition:opacity .6s ease, transform .6s ease; }
+  .js .skills.in-view .skill-bar-row { opacity:1; transform:none; }
+  .js .skills.in-view .skill-bar-row:nth-child(2){ transition-delay:.08s; }
+  .js .skills.in-view .skill-bar-row:nth-child(3){ transition-delay:.16s; }
+  .js .skills.in-view .skill-bar-row:nth-child(4){ transition-delay:.24s; }
+  .js .skills.in-view .skill-bar-row:nth-child(5){ transition-delay:.32s; }
+
   /* hover glow */
   .s-avatar { transition: box-shadow .3s ease, border-color .3s ease; }
   .s-avatar:hover { box-shadow: 0 0 22px rgba(0,0,196,0.35); border-color: var(--primary); }
@@ -53,6 +61,7 @@
     .js .reveal { opacity:1 !important; transform:none !important; transition:none; }
     .hero-geo, .hero-geo-2, .tl-dot { animation:none !important; }
     .js .bar-fill { width:var(--w) !important; transition:none; }
+    .js .skills .skill-bar-row { opacity:1 !important; transform:none !important; transition:none; }
   }
 
   /* ===== STATS BANNER ===== */
@@ -215,7 +224,7 @@
 </div>
 
 <!-- Skills: bars -->
-<div class="sec alt reveal skills" id="skills">
+<div class="sec alt reveal-left skills" id="skills">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">专业技能</div></div>
 
   <div class="skill-bar-row">
