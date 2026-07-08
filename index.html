@@ -10,23 +10,60 @@
 <link rel="stylesheet" href="assets/css/homepage.css">
 <style>
   body { font-family: 'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', -apple-system, sans-serif; }
+  .s-avatar { display:block; object-fit:cover; }
   /* safety: never hide sections if GSAP reveal script is absent */
   .gsap-fade, .gsap-fade-right { opacity: 1 !important; transform: none !important; }
-  .s-avatar { display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg,#4d6dff,#0000C4); color:#fff; font-size:3.2rem; font-weight:800; object-fit:cover; }
-  /* project cards */
-  .proj { padding:0.95rem 1.1rem; border:1px solid var(--gray-200); border-radius:10px; margin-bottom:0.85rem; background:var(--white); transition:border-color .2s,box-shadow .2s; }
-  .proj:hover { border-color:var(--primary); box-shadow:0 2px 14px rgba(0,0,196,0.06); }
-  .proj h3 { font-size:0.98rem; font-weight:700; color:var(--gray-900); margin-bottom:0.2rem; line-height:1.4; }
-  .proj .p-meta { font-size:0.78rem; color:var(--primary); font-weight:600; margin-bottom:0.55rem; }
-  .proj ul { margin:0 0 0 1.15em; }
-  .proj li { font-size:0.86rem; color:var(--gray-700); line-height:1.65; margin-bottom:0.25rem; }
-  /* skill categories */
-  .skill-cat { margin-bottom:0.8rem; }
-  .skill-cat .sc-name { font-size:0.88rem; font-weight:700; color:var(--gray-900); margin-bottom:0.25rem; }
-  .skill-cat .sc-body { font-size:0.85rem; color:var(--gray-700); line-height:1.65; }
+
+  /* ===== STATS BANNER ===== */
+  .stat-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:0.8rem; }
+  .stat-card { text-align:center; padding:1.1rem 0.5rem; border:1px solid var(--gray-200); border-radius:12px; background:var(--white); transition:transform .2s, box-shadow .2s; }
+  .stat-card:hover { transform:translateY(-3px); box-shadow:0 6px 18px rgba(0,0,196,0.08); }
+  .stat-num { font-size:1.7rem; font-weight:800; color:var(--primary); line-height:1; letter-spacing:-0.5px; }
+  .stat-label { font-size:0.78rem; color:var(--gray-500); margin-top:0.4rem; line-height:1.3; }
+
+  /* ===== RADAR ===== */
+  .radar-wrap { display:flex; justify-content:center; margin-top:0.4rem; }
+  .radar-svg { max-width:330px; width:100%; height:auto; }
+  .radar-grid { fill:none; stroke:var(--gray-200); stroke-width:1; }
+  .radar-axis { stroke:var(--gray-200); stroke-width:1; }
+  .radar-area { fill:rgba(0,0,196,0.12); stroke:var(--primary); stroke-width:2; stroke-linejoin:round; }
+  .radar-dot { fill:var(--primary); }
+  .radar-label { font-size:11px; fill:var(--gray-700); font-weight:600; }
+
+  /* ===== SKILL BARS ===== */
+  .skill-bar-row { margin-bottom:1rem; }
+  .skill-bar-top { display:flex; justify-content:space-between; align-items:baseline; font-size:0.86rem; margin-bottom:0.32rem; }
+  .skill-bar-top .nm { font-weight:600; color:var(--gray-900); }
+  .skill-bar-top .pc { color:var(--primary); font-weight:700; font-family:'IBM Plex Mono',monospace; font-size:0.8rem; }
+  .bar-track { height:8px; border-radius:6px; background:var(--gray-100); overflow:hidden; }
+  .bar-fill { height:100%; border-radius:6px; background:linear-gradient(90deg,var(--primary),var(--primary-soft)); }
+  .skill-chips { margin-top:0.4rem; display:flex; flex-wrap:wrap; gap:0.32rem; }
+  .skill-chip { font-size:0.72rem; padding:0.14rem 0.6rem; border-radius:20px; background:var(--gray-50); border:1px solid var(--gray-200); color:var(--gray-600); }
+
+  /* ===== TIMELINE (dot-line) ===== */
+  .timeline { position:relative; margin-left:6px; padding-left:30px; }
+  .timeline::before { content:''; position:absolute; left:7px; top:8px; bottom:8px; width:2px; background:linear-gradient(var(--primary),var(--primary-soft)); }
+  .tl-item { position:relative; margin-bottom:1.15rem; }
+  .tl-item:last-child { margin-bottom:0; }
+  .tl-dot { position:absolute; left:-30px; top:5px; width:14px; height:14px; border-radius:50%; background:var(--white); border:3px solid var(--primary); box-shadow:0 0 0 4px rgba(0,0,196,0.08); }
+  .tl-date { font-family:'IBM Plex Mono',monospace; font-size:0.74rem; color:var(--primary); font-weight:600; }
+  .tl-card { padding:0.85rem 1.05rem; border:1px solid var(--gray-200); border-radius:10px; background:var(--white); margin-top:0.35rem; transition:border-color .2s, box-shadow .2s; }
+  .tl-card:hover { border-color:var(--primary); box-shadow:0 2px 14px rgba(0,0,196,0.06); }
+  .tl-card h3 { font-size:0.96rem; font-weight:700; color:var(--gray-900); margin-bottom:0.15rem; line-height:1.4; }
+  .tl-card .tl-meta { font-size:0.76rem; color:var(--primary); font-weight:600; margin-bottom:0.5rem; }
+  .tl-card ul { margin:0 0 0 1.1em; }
+  .tl-card li { font-size:0.85rem; color:var(--gray-700); line-height:1.62; margin-bottom:0.22rem; }
+
+  /* education highlight card */
+  .edu-card { padding:1rem 1.1rem; border:1px solid var(--gray-200); border-radius:12px; background:var(--white); border-left:4px solid var(--primary); }
+  .edu-card .edu-school { font-size:1rem; font-weight:700; color:var(--gray-900); }
+  .edu-card .edu-sub { font-size:0.82rem; color:var(--primary); font-weight:600; margin:0.2rem 0 0.6rem; }
+  .edu-card ul { margin:0 0 0 1.15em; }
+  .edu-card li { font-size:0.85rem; color:var(--gray-700); line-height:1.62; margin-bottom:0.25rem; }
+
   .cert-list { display:flex; flex-wrap:wrap; gap:0.6rem; }
   .cert-item { font-size:0.85rem; padding:0.4rem 0.9rem; border:1px solid var(--gray-200); border-radius:20px; color:var(--gray-800); background:var(--gray-50); }
-  .contact-line { font-size:0.82rem; color:var(--gray-700); text-align:center; line-height:1.7; margin-bottom:0.4rem; }
+  .status-line { font-size:0.8rem; color:var(--gray-600); text-align:center; margin-bottom:0.5rem; }
 </style>
 </head>
 <body>
@@ -37,19 +74,21 @@
 <aside class="sidebar">
   <img src="images/avatar.jpg" alt="唐萍遥" class="s-avatar">
   <h1 class="s-name">唐萍遥</h1>
-  <p class="s-role">交互设计师 / UX设计师<br>数字产品设计 · 实习</p>
+  <p class="s-role">交互设计师 / UX 设计师<br>数字产品设计 · 实习</p>
+  <div class="status-line">&#128205; 长沙 · 实习求职中</div>
   <div class="contact-line">&#128231; <a href="mailto:2816094267@qq.com">2816094267@qq.com</a></div>
   <div class="contact-line">&#128241; 13787057528</div>
   <div class="theme-toggle" onclick="toggleTheme()"><span class="t-icon" id="themeIcon">&#9790;</span><span id="themeLabel">Light</span></div>
   <div class="s-divider"></div>
   <ul class="s-nav">
     <li><a href="#about" class="active">关于我</a></li>
-    <li><a href="#education">教育经历</a></li>
-    <li><a href="#projects">项目经历</a></li>
-    <li><a href="#campus">在校经历</a></li>
+    <li><a href="#overview">能力概览</a></li>
     <li><a href="#skills">专业技能</a></li>
+    <li><a href="#projects">项目经历</a></li>
+    <li><a href="#education">教育经历</a></li>
+    <li><a href="#campus">在校经历</a></li>
     <li><a href="#certs">获得证书</a></li>
-    <li><a href="#about-me">自我评价</a></li>
+    <li><a href="#self">自我评价</a></li>
   </ul>
   <div class="s-links">
     <a href="mailto:2816094267@qq.com">&#9993; 2816094267@qq.com</a>
@@ -66,10 +105,10 @@
   <div class="hero-geo"></div>
   <div class="hero-geo-2"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">求职意向 · 交互设计师 / UX设计师</div>
+    <div class="hero-eyebrow">求职意向 · 交互 / UX 设计</div>
     <h1>
-      <span class="line">用<span class="hl">设计思维</span>与<span class="hl">技术</span>，</span>
-      <span class="line">创造有温度、<span class="hl">无障碍</span>的交互体验</span>
+      <span class="line">以<span class="hl">用户为中心</span>，用设计与技术</span>
+      <span class="line">打造<span class="hl">有温度、无障碍</span>的交互体验</span>
     </h1>
     <div class="hero-tags">
       <span class="hero-tag">UX Design</span>
@@ -81,131 +120,194 @@
   </div>
 </div>
 
-<!-- Bio -->
-<div class="sec" id="about-me">
+<!-- Stats -->
+<div class="sec" id="stats">
+  <div class="stat-grid">
+    <div class="stat-card"><div class="stat-num">85<span style="font-size:1rem">+</span></div><div class="stat-label">平均成绩</div></div>
+    <div class="stat-card"><div class="stat-num">前5<span style="font-size:1rem">%</span></div><div class="stat-label">作品年级排名</div></div>
+    <div class="stat-card"><div class="stat-num">4<span style="font-size:1rem"> 项</span></div><div class="stat-label">项目经历</div></div>
+    <div class="stat-card"><div class="stat-num">2<span style="font-size:1rem"> 项</span></div><div class="stat-label">专业证书</div></div>
+  </div>
+</div>
+
+<!-- About -->
+<div class="sec alt" id="about-me">
+  <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">关于我</div></div>
   <p class="intro">
-    我是<strong>唐萍遥</strong>，长沙师范学院<strong>艺术与科技</strong>专业（模块二：数字影像与交互设计方向）本科生，将于 2027 年 6 月毕业。我系统学习了用户体验设计、信息架构设计、移动数字应用设计、交互影像创作等核心课程，具备<strong>从用户研究到产品原型设计的全流程能力</strong>。
+    我是<strong>唐萍遥</strong>，长沙师范学院<strong>艺术与科技</strong>专业（模块二：数字影像与交互设计方向）本科生，将于 2027 年 6 月毕业。我系统学习用户体验设计、信息架构、移动数字应用设计与交互影像创作，具备<strong>从用户研究到原型落地全流程的设计能力</strong>。
   </p>
   <p class="intro">
-    我具备较强的用户视角与同理心，在<strong>适老设计、无障碍设计</strong>等方向有实践经验，熟悉交互设计方法论与用户研究工具；同时具有跨媒介技术实践能力，掌握 Unity 3D、TouchDesigner、微信小程序开发等技术手段，善于将设计思维与技术实现结合，可适配产品设计、交互设计及用户体验优化等多类岗位需求。
+    我习惯以用户视角思考，在<strong>适老化与无障碍设计</strong>方向有扎实实践，熟悉交互设计方法论与用户研究工具；同时掌握 Unity 3D、TouchDesigner、微信小程序等跨媒介技术手段，善于将设计思维与技术实现结合，可胜任产品设计、交互设计及体验优化等多类岗位。
   </p>
+</div>
+
+<!-- Overview: Radar -->
+<div class="sec" id="overview">
+  <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">能力概览</div></div>
+  <div class="radar-wrap">
+    <svg class="radar-svg" viewBox="-20 -10 360 350" role="img" aria-label="能力雷达图">
+      <polygon class="radar-grid" points="160,40 263.9,100 263.9,220 160,280 56.1,220 56.1,100"/>
+      <polygon class="radar-grid" points="160,70 237.9,115 237.9,205 160,250 82.1,205 82.1,115"/>
+      <polygon class="radar-grid" points="160,100 212,130 212,190 160,220 108,190 108,130"/>
+      <polygon class="radar-grid" points="160,130 186,145 186,175 160,190 134,175 134,145"/>
+      <line class="radar-axis" x1="160" y1="160" x2="160" y2="40"/>
+      <line class="radar-axis" x1="160" y1="160" x2="263.9" y2="100"/>
+      <line class="radar-axis" x1="160" y1="160" x2="263.9" y2="220"/>
+      <line class="radar-axis" x1="160" y1="160" x2="160" y2="280"/>
+      <line class="radar-axis" x1="160" y1="160" x2="56.1" y2="220"/>
+      <line class="radar-axis" x1="160" y1="160" x2="56.1" y2="100"/>
+      <polygon class="radar-area" points="160,52 258.7,103 248.3,211 160,262 76.9,208 66.5,106"/>
+      <circle class="radar-dot" cx="160" cy="52" r="3"/>
+      <circle class="radar-dot" cx="258.7" cy="103" r="3"/>
+      <circle class="radar-dot" cx="248.3" cy="211" r="3"/>
+      <circle class="radar-dot" cx="160" cy="262" r="3"/>
+      <circle class="radar-dot" cx="76.9" cy="208" r="3"/>
+      <circle class="radar-dot" cx="66.5" cy="106" r="3"/>
+      <text class="radar-label" x="160" y="18" text-anchor="middle">用户研究</text>
+      <text class="radar-label" x="283" y="89" text-anchor="start">交互设计</text>
+      <text class="radar-label" x="283" y="231" text-anchor="start">视觉设计</text>
+      <text class="radar-label" x="160" y="302" text-anchor="middle">原型开发</text>
+      <text class="radar-label" x="37" y="231" text-anchor="end">技术实现</text>
+      <text class="radar-label" x="37" y="89" text-anchor="end">跨学科协作</text>
+    </svg>
+  </div>
+</div>
+
+<!-- Skills: bars -->
+<div class="sec alt" id="skills">
+  <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">专业技能</div></div>
+
+  <div class="skill-bar-row">
+    <div class="skill-bar-top"><span class="nm">交互设计 / 信息架构</span><span class="pc">92%</span></div>
+    <div class="bar-track"><div class="bar-fill" style="width:92%"></div></div>
+    <div class="skill-chips"><span class="skill-chip">Axure</span><span class="skill-chip">Figma</span><span class="skill-chip">用户旅程图</span><span class="skill-chip">信息架构</span></div>
+  </div>
+
+  <div class="skill-bar-row">
+    <div class="skill-bar-top"><span class="nm">用户研究 / 可用性测试</span><span class="pc">90%</span></div>
+    <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+    <div class="skill-chips"><span class="skill-chip">用户访谈</span><span class="skill-chip">可用性测试</span><span class="skill-chip">无障碍设计</span></div>
+  </div>
+
+  <div class="skill-bar-row">
+    <div class="skill-bar-top"><span class="nm">视觉与品牌设计</span><span class="pc">85%</span></div>
+    <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
+    <div class="skill-chips"><span class="skill-chip">Photoshop</span><span class="skill-chip">Illustrator</span><span class="skill-chip">品牌视觉</span></div>
+  </div>
+
+  <div class="skill-bar-row">
+    <div class="skill-bar-top"><span class="nm">原型 & 前端开发</span><span class="pc">82%</span></div>
+    <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
+    <div class="skill-chips"><span class="skill-chip">微信小程序</span><span class="skill-chip">HTML / CSS</span><span class="skill-chip">JavaScript</span></div>
+  </div>
+
+  <div class="skill-bar-row">
+    <div class="skill-bar-top"><span class="nm">交互技术 / 创意编程</span><span class="pc">80%</span></div>
+    <div class="bar-track"><div class="bar-fill" style="width:80%"></div></div>
+    <div class="skill-chips"><span class="skill-chip">Unity 3D</span><span class="skill-chip">TouchDesigner</span><span class="skill-chip">Mugeda H5</span></div>
+  </div>
+</div>
+
+<!-- Projects: timeline -->
+<div class="sec" id="projects">
+  <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">项目经历</div></div>
+  <div class="timeline">
+
+    <div class="tl-item">
+      <span class="tl-dot"></span>
+      <div class="tl-date">2025.3 – 2025.7</div>
+      <div class="tl-card">
+        <h3>“闲转鸭”二手交易微信小程序</h3>
+        <div class="tl-meta">交互设计与开发 · 校园二手物品交易平台（面向大学生）</div>
+        <ul>
+          <li>独立完成用户需求分析与用户旅程图设计，梳理商品浏览、发布、活动、个人中心等 5 个核心模块的信息架构</li>
+          <li>运用体验设计方法进行原型设计，优化交易流程、减少发布环节操作步骤，提升体验流畅度</li>
+          <li>基于微信小程序平台完成前端开发，实现图文展示、消息通知、搜索筛选等交互功能</li>
+          <li>制定统一视觉规范与组件库，保障产品视觉一致性</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <span class="tl-dot"></span>
+      <div class="tl-date">2025.9 – 2025.12</div>
+      <div class="tl-card">
+        <h3>老年人用药提醒微信小程序</h3>
+        <div class="tl-meta">用户研究与交互设计 · 面向老年群体的无障碍用药管理工具</div>
+        <ul>
+          <li>针对老年用户开展用户研究，分析智能设备使用中的认知负担与操作痛点</li>
+          <li>采用极简 UX 原则，设计大字号、高对比度界面与语音提醒，降低学习成本</li>
+          <li>完成用药计划、扫码识别、定时提醒、服用记录等核心流程设计与原型实现</li>
+          <li>通过可用性测试迭代优化，老年用户操作成功率提升至 85% 以上</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <span class="tl-dot"></span>
+      <div class="tl-date">2025.6 – 2025.10</div>
+      <div class="tl-card">
+        <h3>TouchDesigner 实时交互装置作品</h3>
+        <div class="tl-meta">交互技术开发 · 基于 Responsive 交互原则的数字交互装置</div>
+        <ul>
+          <li>基于 TouchDesigner 集成 MediaPipe 手部追踪，实现手势驱动的实时视觉反馈</li>
+          <li>设计从体验入口到视觉反馈的完整交互流程，实现手势识别、粒子特效、声音响应等多模态交互</li>
+          <li>结合跨媒介技术课程知识，完成传感器数据采集与实时渲染管线搭建</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <span class="tl-dot"></span>
+      <div class="tl-date">2025.4 – 2025.5</div>
+      <div class="tl-card">
+        <h3>城市数据可视化设计项目</h3>
+        <div class="tl-meta">设计与制作 · 基于公开数据集的信息可视化作品</div>
+        <ul>
+          <li>收集与整理城市公共数据，运用信息可视化方法进行数据分析与图形化表达</li>
+          <li>设计交互式数据可视化界面，实现多维度筛选与动态展示，提升信息传递效率</li>
+          <li>结合字体版式与视觉传达规范，完成图形设计</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <!-- Education -->
 <div class="sec alt" id="education">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">教育经历</div></div>
-  <div class="list-item">
-    <span class="li-date">2023.9<br>–<br>2027.6</span>
-    <span>
-      <strong>长沙师范学院</strong> &nbsp;|&nbsp; 艺术与科技（模块二：数字影像与交互设计方向） &nbsp;|&nbsp; 本科
-      <ul style="margin:0.5rem 0 0 1.15em;">
-        <li style="font-size:0.85rem;color:var(--gray-700);line-height:1.65;"><strong>主修课程：</strong>用户体验设计、信息架构设计、移动数字应用设计、交互影像创作、跨媒介技术、三维影像、影像基础、媒介与传播、信息可视化、创意编程、虚拟现实设计、项目策划、设计心理学、设计方法与创新、设计表现、字体与版式设计、计算机辅助设计</li>
-        <li style="font-size:0.85rem;color:var(--gray-700);line-height:1.65;"><strong>专业方向：</strong>模块二聚焦数字影像与交互体验设计，系统学习用户研究方法、信息架构逻辑与跨媒介交互技术，具备从用户需求分析到产品原型设计的全流程能力。</li>
-        <li style="font-size:0.85rem;color:var(--gray-700);line-height:1.65;"><strong>学业表现：</strong>平均成绩 85 分以上，担任班级学习委员，作品平均得分位列年级前 5%。</li>
-      </ul>
-    </span>
-  </div>
-</div>
-
-<!-- Projects -->
-<div class="sec" id="projects">
-  <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">项目经历</div></div>
-
-  <div class="proj">
-    <h3>“闲转鸭”二手交易微信小程序</h3>
-    <div class="p-meta">交互设计与开发 &nbsp;|&nbsp; 2025.3 – 2025.7 &nbsp;|&nbsp; 校园二手物品交易平台，面向大学生用户群体</div>
+  <div class="edu-card">
+    <div class="edu-school">长沙师范学院</div>
+    <div class="edu-sub">艺术与科技（模块二：数字影像与交互设计方向） · 本科 · 2023.9 – 2027.6</div>
     <ul>
-      <li>独立完成用户需求分析与用户旅程图设计，梳理商品浏览、发布、活动、个人中心等 5 个核心模块的信息架构</li>
-      <li>运用体验设计方法进行原型设计，完成交易流程优化，减少发布环节操作步骤，提升用户体验流畅度</li>
-      <li>基于微信小程序平台完成前端开发，实现商品图文展示、消息通知、搜索筛选等交互功能</li>
-      <li>设计统一视觉规范，制定色彩体系、组件库与交互反馈规范，确保产品视觉一致性</li>
-    </ul>
-  </div>
-
-  <div class="proj">
-    <h3>老年人用药提醒微信小程序</h3>
-    <div class="p-meta">用户研究与交互设计 &nbsp;|&nbsp; 2025.9 – 2025.12 &nbsp;|&nbsp; 面向老年群体的无障碍用药管理工具</div>
-    <ul>
-      <li>针对老年用户进行用户研究，分析老年群体在智能设备使用中的认知负担与操作痛点</li>
-      <li>采用极简 UX 设计原则，设计大字号、高对比度界面与语音提醒功能，降低老年用户学习成本</li>
-      <li>完成用药计划、扫码识别、定时提醒、服用记录等核心交互流程设计与原型实现</li>
-      <li>通过可用性测试迭代优化界面，提升老年用户操作成功率至 85% 以上</li>
-    </ul>
-  </div>
-
-  <div class="proj">
-    <h3>TouchDesigner 实时交互装置作品</h3>
-    <div class="p-meta">交互技术开发 &nbsp;|&nbsp; 2025.6 – 2025.10 &nbsp;|&nbsp; 基于 Responsive 交互原则的数字交互装置</div>
-    <ul>
-      <li>基于 TouchDesigner 平台开发实时交互系统，集成 MediaPipe 手部追踪技术，实现手势驱动的实时视觉反馈</li>
-      <li>设计从体验入口到视觉反馈的完整交互流程，实现手势识别、粒子特效、声音响应等多模态交互</li>
-      <li>结合跨媒介技术课程知识，完成传感器数据采集与实时渲染管线搭建</li>
-    </ul>
-  </div>
-
-  <div class="proj">
-    <h3>城市数据可视化设计项目</h3>
-    <div class="p-meta">设计与制作 &nbsp;|&nbsp; 2025.4 – 2025.5 &nbsp;|&nbsp; 基于公开数据集的信息可视化作品</div>
-    <ul>
-      <li>收集与整理城市公共数据，运用信息可视化课程方法进行数据分析与图形化表达</li>
-      <li>设计交互式数据可视化界面，实现多维度数据筛选与动态展示，提升信息传递效率</li>
-      <li>结合字体与版式设计、设计表现等课程知识，完成符合视觉传达规范的图形设计</li>
+      <li><strong>主修课程：</strong>用户体验设计、信息架构设计、移动数字应用设计、交互影像创作、跨媒介技术、三维影像、信息可视化、创意编程、虚拟现实设计、设计心理学、设计方法与创新、字体与版式设计、计算机辅助设计</li>
+      <li><strong>专业方向：</strong>聚焦数字影像与交互体验设计，系统学习用户研究方法、信息架构逻辑与跨媒介交互技术，具备从用户需求分析到产品原型设计的全流程能力</li>
+      <li><strong>学业表现：</strong>平均成绩 85 分以上，担任班级学习委员，作品平均得分位列年级前 5%</li>
     </ul>
   </div>
 </div>
 
-<!-- Campus Experience -->
-<div class="sec alt" id="campus">
+<!-- Campus -->
+<div class="sec" id="campus">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">在校经历</div></div>
 
-  <div class="list-item">
-    <span class="li-date">2023.9<br>–<br>至今</span>
-    <span>
-      <strong>班级学习委员</strong>
-      <ul style="margin:0.4rem 0 0 1.15em;">
-        <li style="font-size:0.85rem;color:var(--gray-700);line-height:1.65;">统筹班级学业事务，梳理各课程作业提交、考核节点的标准化提醒流程，保障学业事务推进效率</li>
-        <li style="font-size:0.85rem;color:var(--gray-700);line-height:1.65;">对接授课教师与 30 名班级同学的学业需求，整理课程资料与技能教程，同步 AI 工具使用技巧</li>
-        <li style="font-size:0.85rem;color:var(--gray-700);line-height:1.65;">协调班级项目分组分工，牵头完成专业课程交互设计项目，作品平均得分位列年级前 5%</li>
-      </ul>
-    </span>
+  <div class="edu-card" style="margin-bottom:0.9rem;">
+    <div class="edu-school">班级学习委员 <span style="font-weight:500;font-size:0.82rem;color:var(--gray-500);">· 2023.9 – 至今</span></div>
+    <ul>
+      <li>统筹班级学业事务，梳理作业提交与考核节点的标准化提醒流程，保障事务推进效率</li>
+      <li>对接授课教师与 30 名同学的学业需求，整理课程资料与技能教程，同步 AI 工具使用技巧</li>
+      <li>协调项目分组分工，牵头完成专业课程交互设计项目，作品得分位列年级前 5%</li>
+    </ul>
   </div>
 
-  <div class="list-item">
-    <span class="li-date">2023.9<br>–<br>2025.6</span>
-    <span>
-      <strong>大学生自治委员会 · 部长</strong>
-      <ul style="margin:0.4rem 0 0 1.15em;">
-        <li style="font-size:0.85rem;color:var(--gray-700);line-height:1.65;">负责部门活动的宣传物料制作，运用 PS、Illustrator 完成活动宣传海报与视觉优化</li>
-        <li style="font-size:0.85rem;color:var(--gray-700);line-height:1.65;">主导校园活动的策划和组织，安排相关人员的调度及对接</li>
-        <li style="font-size:0.85rem;color:var(--gray-700);line-height:1.65;">建立内容审核标准化流程，对交付的设计物料进行多轮校验，内容差错率控制 2% 以内</li>
-      </ul>
-    </span>
-  </div>
-</div>
-
-<!-- Skills -->
-<div class="sec" id="skills">
-  <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">专业技能</div></div>
-
-  <div class="skill-cat">
-    <div class="sc-name">设计工具</div>
-    <div class="sc-body">Adobe Photoshop、Adobe Illustrator，具备视觉设计、界面视觉优化与品牌设计能力</div>
-  </div>
-  <div class="skill-cat">
-    <div class="sc-name">原型设计工具</div>
-    <div class="sc-body">Axure、Figma 基础操作，具备原型设计与交互流程图绘制能力</div>
-  </div>
-  <div class="skill-cat">
-    <div class="sc-name">交互技术</div>
-    <div class="sc-body">Unity 3D（VR 交互、C# 脚本）、TouchDesigner（MediaPipe 手部追踪）、Mugeda H5 交互动画</div>
-  </div>
-  <div class="skill-cat">
-    <div class="sc-name">开发技能</div>
-    <div class="sc-body">微信小程序前端开发、HTML/CSS、JavaScript 基础、创意编程</div>
-  </div>
-  <div class="skill-cat">
-    <div class="sc-name">专业能力</div>
-    <div class="sc-body">用户需求分析、用户旅程图设计、信息架构设计、可用性测试、交互原型设计</div>
+  <div class="edu-card">
+    <div class="edu-school">大学生自治委员会 · 部长 <span style="font-weight:500;font-size:0.82rem;color:var(--gray-500);">· 2023.9 – 2025.6</span></div>
+    <ul>
+      <li>负责部门宣传物料制作，运用 PS、Illustrator 完成海报设计与视觉优化</li>
+      <li>主导校园活动策划与组织，安排人员调度及对接</li>
+      <li>建立内容审核标准化流程，交付物料差错率控制在 2% 以内</li>
+    </ul>
   </div>
 </div>
 
