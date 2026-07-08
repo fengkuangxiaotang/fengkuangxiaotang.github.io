@@ -14,6 +14,32 @@
   /* safety: never hide sections if GSAP reveal script is absent */
   .gsap-fade, .gsap-fade-right { opacity: 1 !important; transform: none !important; }
 
+  /* ===== DYNAMIC EFFECTS ===== */
+  html { scroll-behavior: smooth; }
+  .reveal { opacity:1; transform:none; }
+  .js .reveal { opacity:0; transform:translateY(26px); transition:opacity .7s ease, transform .7s ease; }
+  .js .reveal.in-view { opacity:1; transform:none; }
+
+  .bar-fill { width: var(--w); }
+  .js .bar-fill { width:0; transition: width 1.1s cubic-bezier(.4,0,.2,1); }
+  .js .skills.in-view .bar-fill { width: var(--w); }
+
+  @keyframes heroFloat1 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+  @keyframes heroFloat2 { 0%,100%{transform:rotate(45deg) translateY(0)} 50%{transform:rotate(45deg) translateY(-10px)} }
+  .hero-geo { animation: heroFloat1 6s ease-in-out infinite; }
+  .hero-geo-2 { animation: heroFloat2 7s ease-in-out infinite; }
+
+  @keyframes dotPulse { 0%,100%{box-shadow:0 0 0 4px rgba(0,0,196,0.12)} 50%{box-shadow:0 0 0 8px rgba(0,0,196,0)} }
+  .tl-dot { animation: dotPulse 2.6s ease-in-out infinite; }
+
+  .s-nav a.active { color: var(--white); background: var(--primary); }
+
+  @media (prefers-reduced-motion: reduce){
+    .js .reveal { opacity:1 !important; transform:none !important; transition:none; }
+    .hero-geo, .hero-geo-2, .tl-dot { animation:none !important; }
+    .js .bar-fill { width:var(--w) !important; transition:none; }
+  }
+
   /* ===== STATS BANNER ===== */
   .stat-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:0.8rem; }
   .stat-card { text-align:center; padding:1.1rem 0.5rem; border:1px solid var(--gray-200); border-radius:12px; background:var(--white); transition:transform .2s, box-shadow .2s; }
@@ -101,7 +127,7 @@
 <div class="main">
 
 <!-- Hero -->
-<div class="hero" id="about">
+<div class="hero reveal" id="about">
   <div class="hero-geo"></div>
   <div class="hero-geo-2"></div>
   <div class="hero-content">
@@ -121,17 +147,17 @@
 </div>
 
 <!-- Stats -->
-<div class="sec" id="stats">
+<div class="sec reveal" id="stats">
   <div class="stat-grid">
-    <div class="stat-card"><div class="stat-num">85<span style="font-size:1rem">+</span></div><div class="stat-label">平均成绩</div></div>
-    <div class="stat-card"><div class="stat-num">前5<span style="font-size:1rem">%</span></div><div class="stat-label">作品年级排名</div></div>
-    <div class="stat-card"><div class="stat-num">4<span style="font-size:1rem"> 项</span></div><div class="stat-label">项目经历</div></div>
-    <div class="stat-card"><div class="stat-num">2<span style="font-size:1rem"> 项</span></div><div class="stat-label">专业证书</div></div>
+    <div class="stat-card"><div class="stat-num"><span class="cnt" data-to="85">85</span>+</div><div class="stat-label">平均成绩</div></div>
+    <div class="stat-card"><div class="stat-num">前<span class="cnt" data-to="5">5</span>%</div><div class="stat-label">作品年级排名</div></div>
+    <div class="stat-card"><div class="stat-num"><span class="cnt" data-to="4">4</span> 项</div><div class="stat-label">项目经历</div></div>
+    <div class="stat-card"><div class="stat-num"><span class="cnt" data-to="2">2</span> 项</div><div class="stat-label">专业证书</div></div>
   </div>
 </div>
 
 <!-- About -->
-<div class="sec alt" id="about-me">
+<div class="sec alt reveal" id="about-me">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">关于我</div></div>
   <p class="intro">
     我是<strong>唐萍遥</strong>，长沙师范学院<strong>艺术与科技</strong>专业（模块二：数字影像与交互设计方向）本科生，将于 2027 年 6 月毕业。我系统学习用户体验设计、信息架构、移动数字应用设计与交互影像创作，具备<strong>从用户研究到原型落地全流程的设计能力</strong>。
@@ -142,7 +168,7 @@
 </div>
 
 <!-- Overview: Radar -->
-<div class="sec" id="overview">
+<div class="sec reveal" id="overview">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">能力概览</div></div>
   <div class="radar-wrap">
     <svg class="radar-svg" viewBox="-20 -10 360 350" role="img" aria-label="能力雷达图">
@@ -174,42 +200,42 @@
 </div>
 
 <!-- Skills: bars -->
-<div class="sec alt" id="skills">
+<div class="sec alt reveal skills" id="skills">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">专业技能</div></div>
 
   <div class="skill-bar-row">
     <div class="skill-bar-top"><span class="nm">交互设计 / 信息架构</span><span class="pc">92%</span></div>
-    <div class="bar-track"><div class="bar-fill" style="width:92%"></div></div>
+    <div class="bar-track"><div class="bar-fill" style="--w:92%"></div></div>
     <div class="skill-chips"><span class="skill-chip">Axure</span><span class="skill-chip">Figma</span><span class="skill-chip">用户旅程图</span><span class="skill-chip">信息架构</span></div>
   </div>
 
   <div class="skill-bar-row">
     <div class="skill-bar-top"><span class="nm">用户研究 / 可用性测试</span><span class="pc">90%</span></div>
-    <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+    <div class="bar-track"><div class="bar-fill" style="--w:90%"></div></div>
     <div class="skill-chips"><span class="skill-chip">用户访谈</span><span class="skill-chip">可用性测试</span><span class="skill-chip">无障碍设计</span></div>
   </div>
 
   <div class="skill-bar-row">
     <div class="skill-bar-top"><span class="nm">视觉与品牌设计</span><span class="pc">85%</span></div>
-    <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
+    <div class="bar-track"><div class="bar-fill" style="--w:85%"></div></div>
     <div class="skill-chips"><span class="skill-chip">Photoshop</span><span class="skill-chip">Illustrator</span><span class="skill-chip">品牌视觉</span></div>
   </div>
 
   <div class="skill-bar-row">
     <div class="skill-bar-top"><span class="nm">原型 & 前端开发</span><span class="pc">82%</span></div>
-    <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
+    <div class="bar-track"><div class="bar-fill" style="--w:82%"></div></div>
     <div class="skill-chips"><span class="skill-chip">微信小程序</span><span class="skill-chip">HTML / CSS</span><span class="skill-chip">JavaScript</span></div>
   </div>
 
   <div class="skill-bar-row">
     <div class="skill-bar-top"><span class="nm">交互技术 / 创意编程</span><span class="pc">80%</span></div>
-    <div class="bar-track"><div class="bar-fill" style="width:80%"></div></div>
+    <div class="bar-track"><div class="bar-fill" style="--w:80%"></div></div>
     <div class="skill-chips"><span class="skill-chip">Unity 3D</span><span class="skill-chip">TouchDesigner</span><span class="skill-chip">Mugeda H5</span></div>
   </div>
 </div>
 
 <!-- Projects: timeline -->
-<div class="sec" id="projects">
+<div class="sec reveal" id="projects">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">项目经历</div></div>
   <div class="timeline">
 
@@ -275,7 +301,7 @@
 </div>
 
 <!-- Education -->
-<div class="sec alt" id="education">
+<div class="sec alt reveal" id="education">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">教育经历</div></div>
   <div class="edu-card">
     <div class="edu-school">长沙师范学院</div>
@@ -289,7 +315,7 @@
 </div>
 
 <!-- Campus -->
-<div class="sec" id="campus">
+<div class="sec reveal" id="campus">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">在校经历</div></div>
 
   <div class="edu-card" style="margin-bottom:0.9rem;">
@@ -312,7 +338,7 @@
 </div>
 
 <!-- Certificates -->
-<div class="sec alt" id="certs">
+<div class="sec alt reveal" id="certs">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">获得证书</div></div>
   <div class="cert-list">
     <span class="cert-item">普通话水平测试证书</span>
@@ -321,7 +347,7 @@
 </div>
 
 <!-- Self Evaluation -->
-<div class="sec" id="self">
+<div class="sec reveal" id="self">
   <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">自我评价</div></div>
   <p class="intro">艺术与科技专业模块二方向背景，系统学习了用户体验设计、信息架构设计、移动数字应用设计、交互影像创作等核心课程，具备从用户研究到产品原型设计的全流程能力。</p>
   <p class="intro">具备较强的用户视角与同理心，在适老设计、无障碍设计等方向有实践经验，熟悉交互设计方法论与用户研究工具，可适配产品设计、交互设计及用户体验优化多类岗位需求。</p>
@@ -334,6 +360,48 @@
 </div>
 
 <script>
+(function(){
+  if (!('IntersectionObserver' in window)) return; // keep everything visible if unsupported
+  document.documentElement.classList.add('js');
+
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        e.target.classList.add('in-view');
+        if (e.target.id === 'stats') animateStats();
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  function animateStats(){
+    document.querySelectorAll('#stats .cnt').forEach(function(el){
+      var to = parseInt(el.getAttribute('data-to'), 10);
+      var cur = 0, step = Math.max(1, Math.ceil(to / 28));
+      var t = setInterval(function(){
+        cur += step;
+        if (cur >= to){ cur = to; clearInterval(t); }
+        el.textContent = cur;
+      }, 24);
+    });
+  }
+
+  // scroll-spy: highlight nav link for the section in view
+  var navLinks = {};
+  document.querySelectorAll('.s-nav a').forEach(function(a){ navLinks[a.getAttribute('href').slice(1)] = a; });
+  var spy = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        Object.keys(navLinks).forEach(function(k){ navLinks[k].classList.remove('active'); });
+        var a = navLinks[e.target.id];
+        if (a) a.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  document.querySelectorAll('.sec, .hero').forEach(function(el){ if (el.id) spy.observe(el); });
+})();
+
 function toggleTheme(){
   var de = document.documentElement;
   var dark = de.getAttribute('data-theme') === 'dark';
